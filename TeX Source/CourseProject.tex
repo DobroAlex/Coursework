@@ -5,6 +5,7 @@
 \usepackage[T2A]{fontenc}
 %\usepackage{pscyr}
 %\usepackage{graphicx} % для вставки картинок
+\usepackage{mathptmx} %поддержка textbf
 \usepackage{makecell}
 \usepackage{textcomp}
 \usepackage{multirow} % улучшенное форматирование таблиц
@@ -33,8 +34,12 @@
 \renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.}% Меняем везде перечисления на цифра.цифра
 \renewcommand{\theenumiii}{.\arabic{enumiii}}% Меняем везде перечисления на цифра.цифра
 \renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.}% Меняем везде перечисления на цифра.цифра
-\renewcommand{\rmdefault}{ftm}
 
+\renewcommand{\rmdefault}{ftm}
+%NB: три команды ниже переопределяют некотрые шрифты  и дают поддержку жирного и прочиах текстов https://www.linux.org.ru/forum/general/4219163
+\renewcommand{\rmdefault}{cmr} % Шрифт с засечками
+\renewcommand{\sfdefault}{cmss} % Шрифт без засечек
+\renewcommand{\ttdefault}{cmtt} % Моноширинный шрифт
 \begin{document}
 	\input{Course-Title}% это титульный лист
 	\tableofcontents % это оглавление, которое генерируется автоматически
