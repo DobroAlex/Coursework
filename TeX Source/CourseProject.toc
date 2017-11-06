@@ -1,2 +1,4 @@
 \select@language {russian}
-\contentsline {section}{\numberline {1}\IeC {\CYRV }\IeC {\cyrv }\IeC {\cyre }\IeC {\cyrd }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{3}
+\@ifundefined {tof@begin}{\global \let \tof@begin \relax \global \let \tof@finish \@empty \global \let \tof@starttags \@gobble \global \let \tof@stoptags \@gobble \global \let \tof@tagthis \@gobble \global \let \tof@untagthis \@gobble }{}
+\tof@begin 
+\contentsline {section}{\IeC {\CYRV }\IeC {\cyrv }\IeC {\cyre }\IeC {\cyrd }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{3}

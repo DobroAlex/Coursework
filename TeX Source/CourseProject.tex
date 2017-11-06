@@ -18,14 +18,16 @@
 \usepackage[dvips]{graphicx} %хотим вставлять в диплом рисунки?
 %\graphicspath{{images/}}%путь к рисункам
 \usepackage{fancyhdr}%оформление нумерации 
+\usepackage{tableof} %поддержка табличек
 \makeatletter
 \renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
 \makeatother
 
 \usepackage{geometry} % Меняем поля страницы
+%QUEST: 3cm или 2 ? Если 3, придется менять форматирование заголовка 
 \geometry{left=2cm}% левое поле
-\geometry{right=1.5cm}% правое поле
-\geometry{top=1cm}% верхнее поле
+\geometry{right=15mm}% правое поле
+\geometry{top=2cm}% верхнее поле
 \geometry{bottom=2cm}% нижнее поле
 
 \renewcommand{\theenumi}{\arabic{enumi}}% Меняем везде перечисления на цифра.цифра
@@ -44,7 +46,11 @@
 \begin{document}
 	%\pagestyle{empty} % нумерация выкл.
 	\input{Course-Title}% это титульный лист
+
 	\tableofcontents % это оглавление, которое генерируется автоматически
+	\thispagestyle{empty}%отключает нумерование страниц до введения включительно 
+	%\addcontentsline{toc}{section}{Введение}% будет костыльно выглядеть
 	\input{0-Intoduction} %введение
 	\newpage
+	
 \end{document}
