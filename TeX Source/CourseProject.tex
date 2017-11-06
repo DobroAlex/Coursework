@@ -17,7 +17,7 @@
 \usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float} %подключаем нужные пакеты расширений
 \usepackage[dvips]{graphicx} %хотим вставлять в диплом рисунки?
 %\graphicspath{{images/}}%путь к рисункам
-
+\usepackage{fancyhdr}%оформление нумерации 
 \makeatletter
 \renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
 \makeatother
@@ -40,7 +40,11 @@
 \renewcommand{\rmdefault}{cmr} % Шрифт с засечками
 \renewcommand{\sfdefault}{cmss} % Шрифт без засечек
 \renewcommand{\ttdefault}{cmtt} % Моноширинный шрифт
+    \renewcommand*\thesection{\arabic{section}}
 \begin{document}
+	%\pagestyle{empty} % нумерация выкл.
 	\input{Course-Title}% это титульный лист
 	\tableofcontents % это оглавление, которое генерируется автоматически
+	\input{0-Intoduction} %введение
+	\newpage
 \end{document}
