@@ -16,6 +16,7 @@
 \usepackage[english,russian, russianb]{babel}%используем русский и английский языки с переносами
 \usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float} %подключаем нужные пакеты расширений
 \usepackage[dvips]{graphicx} %хотим вставлять в диплом рисунки?
+\usepackage{cmap} % Улучшенный поиск русских слов в полученном pdf-файле
 %\graphicspath{{images/}}%путь к рисункам
 \usepackage{fancyhdr}%оформление нумерации 
 \usepackage{tableof} %поддержка табличек
@@ -24,7 +25,7 @@
 \makeatother
 
 \usepackage{geometry} % Меняем поля страницы
-%QUEST: 3cm или 2 ? Если 3, придется менять форматирование заголовка 
+%QUEST: 3cm или 2 ? Ес\usepackage{cmap} % Улучшенный поиск русских слов в полученном pdf-файлели 3, придется менять форматирование заголовка 
 \geometry{left=2cm}% левое поле
 \geometry{right=15mm}% правое поле
 \geometry{top=2cm}% верхнее поле
