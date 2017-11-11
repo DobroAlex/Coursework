@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  11 NOV 2017 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  11 NOV 2017 22:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1083,11 +1083,11 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 Here is how much of TeX's memory you used:
  4813 strings out of 493013
  60416 string characters out of 6135682
- 123337 words of memory out of 5000000
+ 124337 words of memory out of 5000000
  8190 multiletter control sequences out of 15000+600000
  22331 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,5n,43p,1046b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,5n,43p,1758b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/font
 s/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texmf/fonts/type1/public/cm-s
 uper/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></
@@ -1096,7 +1096,7 @@ s/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></u
 sr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts
 /type1/public/cm-super/sfrm1440.pfb>
-Output written on CourseProject.pdf (4 pages, 110486 bytes).
+Output written on CourseProject.pdf (4 pages, 113642 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
