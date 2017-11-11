@@ -31,6 +31,7 @@
 \geometry{top=2cm}% верхнее поле
 \geometry{bottom=2cm}% нижнее поле
 
+
 \renewcommand{\theenumi}{\arabic{enumi}}% Меняем везде перечисления на цифра.цифра
 \renewcommand{\labelenumi}{\arabic{enumi}}% Меняем везде перечисления на цифра.цифра
 \renewcommand{\theenumii}{.\arabic{enumii}}% Меняем везде перечисления на цифра.цифра
@@ -43,7 +44,8 @@
 \renewcommand{\rmdefault}{cmr} % Шрифт с засечками
 \renewcommand{\sfdefault}{cmss} % Шрифт без засечек
 \renewcommand{\ttdefault}{cmtt} % Моноширинный шрифт
-    \renewcommand*\thesection{\arabic{section}}
+\renewcommand*\thesection{\arabic{section}}
+    
 \begin{document}
 	%\pagestyle{empty} % нумерация выкл.
 	\input{Course-Title}% это титульный лист
@@ -52,5 +54,7 @@
 	\thispagestyle{empty}%отключает нумерование страниц до введения включительно 
 	%\addcontentsline{toc}{section}{Введение}% будет костыльно выглядеть
 	\input{0-Intoduction} %введение
+	\input{UsedLiterature} %список литературы
 	\newpage
+	
 \end{document}
