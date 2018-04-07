@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  7 APR 2018 20:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  7 APR 2018 21:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1085,7 +1085,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 Here is how much of TeX's memory you used:
  4827 strings out of 493013
  60649 string characters out of 6135682
- 125994 words of memory out of 5000000
+ 126060 words of memory out of 5000000
  8196 multiletter control sequences out of 15000+600000
  22668 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1098,7 +1098,7 @@ onts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
 </usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fo
 nts/type1/public/cm-super/sfrm1440.pfb>
-Output written on CourseProject.pdf (7 pages, 134552 bytes).
+Output written on CourseProject.pdf (7 pages, 134946 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
