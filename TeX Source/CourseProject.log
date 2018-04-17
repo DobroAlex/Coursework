@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  16 APR 2018 22:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  17 APR 2018 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1009,14 +1009,14 @@ LaTeX Font Info:    ... okay on input line 51.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 497.92325pt, 42.67912pt)
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
 * v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=497.92325pt
+* \textwidth=455.24411pt
 * \textheight=731.23584pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
 * \topmargin=-54.36449pt
 * \headheight=14.0pt
 * \headsep=25.0pt
@@ -1082,29 +1082,41 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 
 (./0-Intoduction.tex [1
 
-] [3] [4]) (./1-SecrecyOfCorrespondence.tex [5]
-Overfull \hbox (3.75555pt too wide) in paragraph at lines 33--34
-\T2A/cmr/m/n/14.4 контр-раз-ве-ды-ва-тель-ных опе-ра-ций. Од-на-ко по-доб-ное д
-о-пу-сти-мо толь-ко при
+] [3]
+Overfull \hbox (5.08612pt too wide) in paragraph at lines 21--24
+\T2A/cmr/m/n/14.4 ний поль-зо-ва-те-лей циф-ро-вых си-стем, ис-поль-зу-е-мые ки
+бер-преступниками
  []
 
-[6] [7] [8]) (./3-DataProtection.tex
-Overfull \hbox (21.99937pt too wide) in paragraph at lines 12--16
-\T2A/cmr/m/n/14.4 но-ло-ги-ях и о за-щи-те ин-фор-ма-ции>> вво-дит дис-ци-пли-н
-ар-ную, гражданско-правовую,
+[4]) (./1-SecrecyOfCorrespondence.tex [5] [6]
+Overfull \hbox (2.4474pt too wide) in paragraph at lines 35--36
+\T2A/cmr/m/n/14.4 про-слу-ши-ва-ние те-ле-фон-ных пе-ре-го-во-ров, сня-тие ин-ф
+ор-ма-ции с тех-
+ []
+
+[7] [8]) (./3-DataProtection.tex
+Overfull \hbox (48.6847pt too wide) in paragraph at lines 12--16
+\T2A/cmr/m/n/14.4 ных тех-но-ло-ги-ях и о за-щи-те ин-фор-ма-ции>> вво-дит дис-
+ци-пли-нар-ную, гражданско-
  []
 
 
-Overfull \hbox (16.28493pt too wide) in paragraph at lines 18--19
+Overfull \hbox (58.96407pt too wide) in paragraph at lines 18--19
 \T2A/cmr/m/n/14.4 Основными при-чи-на-ми утеч-ки и пе-ре-хва-та со-об-ще-ний яв
 -ля-ют-ся SpyWare(вирусы),
+ []
+
+
+Overfull \hbox (2.71844pt too wide) in paragraph at lines 20--21
+[]\T2A/cmr/bx/n/14.4 SpyWare\T2A/cmr/m/n/14.4 . Ви-рус в клас-си-че-ском по-ни-
+ма-нии пред-став-ля-ет со-бой про-
  []
 
 [9] [10]) (./UsedLiterature.tex) [11] (./CourseProject.aux) ) 
 Here is how much of TeX's memory you used:
  4861 strings out of 493013
  61324 string characters out of 6135682
- 126564 words of memory out of 5000000
+ 124562 words of memory out of 5000000
  8226 multiletter control sequences out of 15000+600000
  22671 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1118,7 +1130,7 @@ cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx3583.pf
 b></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/
 fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/c
 m-super/sfrm1728.pfb>
-Output written on CourseProject.pdf (11 pages, 137961 bytes).
+Output written on CourseProject.pdf (11 pages, 137768 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream
