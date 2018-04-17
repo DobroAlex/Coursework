@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  17 APR 2018 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  17 APR 2018 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -979,26 +979,26 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (./CourseProject.aux)
 \openout1 = `CourseProject.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 53.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    ... okay on input line 53.
 \tof@tf=\read1
 
 *geometry* driver: auto-detecting
@@ -1089,25 +1089,19 @@ Overfull \hbox (5.08612pt too wide) in paragraph at lines 21--24
  []
 
 [4]) (./1-SecrecyOfCorrespondence.tex [5] [6]
-Overfull \hbox (2.4474pt too wide) in paragraph at lines 35--36
+Overfull \hbox (2.4474pt too wide) in paragraph at lines 34--35
 \T2A/cmr/m/n/14.4 про-слу-ши-ва-ние те-ле-фон-ных пе-ре-го-во-ров, сня-тие ин-ф
 ор-ма-ции с тех-
  []
 
 [7] [8]) (./3-DataProtection.tex
-Overfull \hbox (48.6847pt too wide) in paragraph at lines 12--16
+Overfull \hbox (48.6847pt too wide) in paragraph at lines 11--15
 \T2A/cmr/m/n/14.4 ных тех-но-ло-ги-ях и о за-щи-те ин-фор-ма-ции>> вво-дит дис-
 ци-пли-нар-ную, гражданско-
  []
 
 
-Overfull \hbox (58.96407pt too wide) in paragraph at lines 18--19
-\T2A/cmr/m/n/14.4 Основными при-чи-на-ми утеч-ки и пе-ре-хва-та со-об-ще-ний яв
--ля-ют-ся SpyWare(вирусы),
- []
-
-
-Overfull \hbox (2.71844pt too wide) in paragraph at lines 20--21
+Overfull \hbox (2.71844pt too wide) in paragraph at lines 19--20
 []\T2A/cmr/bx/n/14.4 SpyWare\T2A/cmr/m/n/14.4 . Ви-рус в клас-си-че-ском по-ни-
 ма-нии пред-став-ля-ет со-бой про-
  []
@@ -1116,11 +1110,11 @@ Overfull \hbox (2.71844pt too wide) in paragraph at lines 20--21
 Here is how much of TeX's memory you used:
  4861 strings out of 493013
  61324 string characters out of 6135682
- 124562 words of memory out of 5000000
+ 125562 words of memory out of 5000000
  8226 multiletter control sequences out of 15000+600000
  22671 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,5n,43p,2512b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,5n,43p,3239b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-
 super/cm-super-t2a.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.p
@@ -1130,7 +1124,7 @@ cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx3583.pf
 b></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/
 fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/c
 m-super/sfrm1728.pfb>
-Output written on CourseProject.pdf (11 pages, 137768 bytes).
+Output written on CourseProject.pdf (11 pages, 138079 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream
