@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  12 MAY 2018 16:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  12 MAY 2018 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1118,13 +1118,25 @@ Overfull \hbox (19.55403pt too wide) in paragraph at lines 40--42
 и в день(обозначим
  []
 
-[11]) (./3-DataProtection.tex
+
+Overfull \hbox (6.48367pt too wide) in paragraph at lines 46--47
+\T2A/cmr/bx/n/14.4 ло-век в се-ре-дине>> \T2A/cmr/m/n/14.4 или <<Ата-ка по-сред
+-ни-ка>> (<<Man in the midle>>, MITM).
+ []
+
+
+Overfull \hbox (6.51833pt too wide) in paragraph at lines 48--49
+[]\T2A/cmr/m/n/14.4 Современные про-то-ко-лы ком-му-ни-ка-ции ис-поль-зу-ют раз
+-лич-ные крип-
+ []
+
+[11] [12]) (./3-DataProtection.tex
 Overfull \hbox (48.6847pt too wide) in paragraph at lines 11--15
 \T2A/cmr/m/n/14.4 ных тех-но-ло-ги-ях и о за-щи-те ин-фор-ма-ции>> вво-дит дис-
 ци-пли-нар-ную, гражданско-
  []
 
-[12]) (./UsedLiterature.tex) [13] (./CourseProject.aux) ) 
+[13]) (./UsedLiterature.tex) [14] (./CourseProject.aux) ) 
 Here is how much of TeX's memory you used:
  4883 strings out of 493013
  61507 string characters out of 6135682
@@ -1148,10 +1160,10 @@ usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sfti1440.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on CourseProject.pdf (13 pages, 208527 bytes).
+Output written on CourseProject.pdf (14 pages, 210721 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
