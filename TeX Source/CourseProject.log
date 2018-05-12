@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  12 MAY 2018 14:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  12 MAY 2018 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1107,18 +1107,18 @@ Overfull \hbox (2.71844pt too wide) in paragraph at lines 21--24
  []
 
 [9]
-Overfull \hbox (24.39294pt too wide) in paragraph at lines 25--26
+Overfull \hbox (24.39294pt too wide) in paragraph at lines 25--29
 []\T2A/cmr/m/n/14.4 –ассмотрим от-дель-но са-мо-го рас-про-стра-нЉн-но-го пред-
 ста-ви-те-л€ SpyWare
  []
 
-[10]) (./3-DataProtection.tex
+[10] [11]) (./3-DataProtection.tex
 Overfull \hbox (48.6847pt too wide) in paragraph at lines 11--15
 \T2A/cmr/m/n/14.4 ных тех-но-ло-ги-€х и о за-щи-те ин-фор-ма-ции>> вво-дит дис-
 ци-пли-нар-ную, гражданско-
  []
 
-[11]) (./UsedLiterature.tex) [12] (./CourseProject.aux) ) 
+[12]) (./UsedLiterature.tex) [13] (./CourseProject.aux) ) 
 Here is how much of TeX's memory you used:
  4867 strings out of 493013
  61420 string characters out of 6135682
@@ -1136,10 +1136,10 @@ uper/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx3583.pfb></
 usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1440.pfb>
-Output written on CourseProject.pdf (12 pages, 166477 bytes).
+Output written on CourseProject.pdf (13 pages, 169699 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 92 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
