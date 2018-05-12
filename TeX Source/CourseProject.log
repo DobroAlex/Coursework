@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  12 MAY 2018 14:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  12 MAY 2018 14:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1101,13 +1101,13 @@ Overfull \hbox (6.81454pt too wide) in paragraph at lines 12--14
  []
 
 
-Overfull \hbox (2.71844pt too wide) in paragraph at lines 21--24
+Overfull \hbox (2.71844pt too wide) in paragraph at lines 21--22
 []\T2A/cmr/bx/n/14.4 SpyWare\T2A/cmr/m/n/14.4 . Ви-рус в клас-си-че-ском по-ни-
 ма-нии пред-став-ля-ет со-бой про-
  []
 
 [9]
-Overfull \hbox (24.39294pt too wide) in paragraph at lines 25--29
+Overfull \hbox (24.39294pt too wide) in paragraph at lines 27--29
 []\T2A/cmr/m/n/14.4 Рассмотрим от-дель-но са-мо-го рас-про-стра-нјн-но-го пред-
 ста-ви-те-ля SpyWare
  []
@@ -1122,7 +1122,7 @@ Overfull \hbox (48.6847pt too wide) in paragraph at lines 11--15
 Here is how much of TeX's memory you used:
  4867 strings out of 493013
  61420 string characters out of 6135682
- 125896 words of memory out of 5000000
+ 124896 words of memory out of 5000000
  8227 multiletter control sequences out of 15000+600000
  23545 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1136,7 +1136,7 @@ uper/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx3583.pfb></
 usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1440.pfb>
-Output written on CourseProject.pdf (13 pages, 169699 bytes).
+Output written on CourseProject.pdf (13 pages, 170167 bytes).
 PDF statistics:
  92 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
