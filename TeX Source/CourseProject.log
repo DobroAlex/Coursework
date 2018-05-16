@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  16 MAY 2018 19:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  16 MAY 2018 20:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1147,17 +1147,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
-[14]) (./3-DataProtection.tex
+
+Overfull \hbox (4.51729pt too wide) in paragraph at lines 84--85
+\T2A/cmr/m/n/14.4 —овременные за-ко-но-твор-че-ские ини-ци-а-ти-вы ве-ду-щих ст
+ран ≈в-ро-пы, јме-
+ []
+
+[14] [15]) (./3-DataProtection.tex
 Overfull \hbox (48.6847pt too wide) in paragraph at lines 11--15
 \T2A/cmr/m/n/14.4 ных тех-но-ло-ги-€х и о за-щи-те ин-фор-ма-ции>> вво-дит дис-
 ци-пли-нар-ную, гражданско-
  []
 
-[15]) (./UsedLiterature.tex) [16] (./CourseProject.aux) ) 
+[16]) (./UsedLiterature.tex) [17] (./CourseProject.aux) ) 
 Here is how much of TeX's memory you used:
  4883 strings out of 493013
  61507 string characters out of 6135682
- 125896 words of memory out of 5000000
+ 126133 words of memory out of 5000000
  8227 multiletter control sequences out of 15000+600000
  31377 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1177,10 +1183,10 @@ usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sfti1440.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on CourseProject.pdf (16 pages, 215718 bytes).
+Output written on CourseProject.pdf (17 pages, 217861 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
