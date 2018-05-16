@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  16 MAY 2018 19:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  16 MAY 2018 19:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1101,74 +1101,49 @@ Overfull \hbox (6.81454pt too wide) in paragraph at lines 12--14
  []
 
 
-Overfull \hbox (2.71844pt too wide) in paragraph at lines 21--22
+Overfull \hbox (2.71844pt too wide) in paragraph at lines 22--23
 []\T2A/cmr/bx/n/14.4 SpyWare\T2A/cmr/m/n/14.4 . ¬и-рус в клас-си-че-ском по-ни-
 ма-нии пред-став-л€-ет со-бой про-
  []
 
 [9]
-Overfull \hbox (24.39294pt too wide) in paragraph at lines 27--29
+Overfull \hbox (24.39294pt too wide) in paragraph at lines 28--30
 []\T2A/cmr/m/n/14.4 –ассмотрим от-дель-но са-мо-го рас-про-стра-нЉн-но-го пред-
 ста-ви-те-л€ SpyWare
  []
 
 [10]
-Overfull \hbox (19.55403pt too wide) in paragraph at lines 40--42
+Overfull \hbox (19.55403pt too wide) in paragraph at lines 41--43
 \T2A/cmr/m/n/14.4 что сред-ний ме-не-джер на-жи-ма-ет при-мер-но 23000 кла-ви-ш
 и в день(обозначим
  []
 
 
-Overfull \hbox (6.48367pt too wide) in paragraph at lines 46--47
+Overfull \hbox (6.48367pt too wide) in paragraph at lines 47--48
 \T2A/cmr/bx/n/14.4 ло-век в се-ре-дине>> \T2A/cmr/m/n/14.4 или <<јта-ка по-сред
 -ни-ка>> (<<Man in the midle>>, MITM).
  []
 
 
-Overfull \hbox (6.51833pt too wide) in paragraph at lines 48--49
+Overfull \hbox (6.51833pt too wide) in paragraph at lines 49--50
 []\T2A/cmr/m/n/14.4 —овременные про-то-ко-лы ком-му-ни-ка-ции ис-поль-зу-ют раз
 -лич-ные крип-
  []
 
 [11]
-Overfull \hbox (7.98795pt too wide) in paragraph at lines 62--64
+Overfull \hbox (7.98795pt too wide) in paragraph at lines 63--65
 \T2A/cmr/m/n/14.4 пи-си (Ё÷ѕ, digital signature, DS), иден-ти-фи-ка-ци€/аутенти
 фикаци€, аутен-
  []
 
 
-Overfull \hbox (88.84915pt too wide) in paragraph at lines 62--64
+Overfull \hbox (88.84915pt too wide) in paragraph at lines 63--65
 \T2A/cmr/m/n/14.4 раз-де-лить на пас-сив-ные и ак-тив-ные: при пас-сив-ных ата-
 ках взлом-щик(криптоаналитик)
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+[12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
@@ -1202,7 +1177,7 @@ usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sfti1440.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on CourseProject.pdf (16 pages, 215074 bytes).
+Output written on CourseProject.pdf (16 pages, 215424 bytes).
 PDF statistics:
  122 PDF objects out of 1000 (max. 8388607)
  84 compressed objects within 1 object stream
