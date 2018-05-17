@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  17 MAY 2018 19:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  17 MAY 2018 20:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1153,7 +1153,13 @@ Overfull \hbox (4.51729pt too wide) in paragraph at lines 84--85
 ран Ев-ро-пы, Аме-
  []
 
-[14] [15] [16]) (./3-DataProtection.tex
+[14] [15]
+Overfull \hbox (43.37773pt too wide) in paragraph at lines 101--105
+[]\T2A/cmr/m/n/14.4 Рассмотрим по-дроб-нее ос-нов-ные про-грам-мы сле-же-ния СШ
+А: \T2A/cmr/bx/n/14.4 MAINWAY\T2A/cmr/m/n/14.4 .
+ []
+
+[16]) (./3-DataProtection.tex
 Overfull \hbox (48.6847pt too wide) in paragraph at lines 11--15
 \T2A/cmr/m/n/14.4 ных тех-но-ло-ги-ях и о за-щи-те ин-фор-ма-ции>> вво-дит дис-
 ци-пли-нар-ную, гражданско-
@@ -1183,7 +1189,7 @@ usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sfti1440.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on CourseProject.pdf (18 pages, 221314 bytes).
+Output written on CourseProject.pdf (18 pages, 223985 bytes).
 PDF statistics:
  128 PDF objects out of 1000 (max. 8388607)
  88 compressed objects within 1 object stream
