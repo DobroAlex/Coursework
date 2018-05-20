@@ -63,14 +63,15 @@ namespace BlowFishCS
 {
 	class BlowFish
 	{
-		#region "Global variables and constants"
+		#region "Глобальные константы и переменные  "
 
-		const int ROUNDS = 16; //standard is 16, to increase the number of rounds, bf_P needs to be equal to the number of rouds. Use digits of PI.
+		const int ROUNDS = 16; //стандарт =  16,  для увелечения числа раундов, bf_P должно равняться числу раундов. Используйте цифры Pi.
 
-		//Random number generator for creating IVs
+        //генератор случайных чиел для создания IV
+		
 		RNGCryptoServiceProvider randomSource;
 
-		//SBLOCKS
+		//S-блоки
 		private uint[] bf_s0;
 		private uint[] bf_s1;
 		private uint[] bf_s2;
@@ -78,14 +79,14 @@ namespace BlowFishCS
 
 		private uint[] bf_P;
 
-		//KEY
+		//Ключ
 		private byte[] key;
 
-		//HALF-BLOCKS
+		//Полублоки
 		private uint xl_par;
 		private uint xr_par;
 
-		//Initialization Vector for CBC and CTR mode
+		//инициализация Вектора для CBC и CTR
 		private byte[] InitVector;
 		private bool IVSet;
 
@@ -95,12 +96,12 @@ namespace BlowFishCS
 
 		#endregion
 
-		#region "Constructors"
+		#region "Конструкторы"
 
 		/// <summary>
-		/// Constructor for hex key
+        /// Конструктор для hex-ключа
 		/// </summary>
-		/// <param name="hexKey">Cipher key as a hex string</param>
+		/// <param name="hexKey">Шифровальный ключ как hex-строка </param>
 		public BlowFish(string hexKey)
 		{
 			randomSource = new RNGCryptoServiceProvider();
@@ -108,9 +109,9 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// Constructor for byte key
+		/// Конструктор для байтового ключа
 		/// </summary>
-		/// <param name="cipherKey">Cipher key as a byte array</param>
+		/// <param name="cipherKey">Шифровальный ключ как массив байтов</param>
 		public BlowFish(byte[] cipherKey)
 		{
 			randomSource = new RNGCryptoServiceProvider();
@@ -119,13 +120,13 @@ namespace BlowFishCS
 
 		#endregion
 
-		#region "Public methods"
+		#region "Публик-методы"
 
 		/// <summary>
-		/// Encrypts a string in CBC mode
+		/// Шифрует строку в CBC 
 		/// </summary>
-		/// <param name="pt">Plaintext data to encrypt</param>
-		/// <returns>Ciphertext with IV appended to front</returns>
+		/// <param name="pt">Исходный текст для шифрования </param>
+		/// <returns>Шифротекст с прицепленным к концу IV </returns>
 		public string Encrypt_CBC(string pt)
 		{
 			if (!IVSet)
@@ -134,9 +135,9 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// Decrypts a string in CBC mode
+		/// Расшифровка строки в CBC 
 		/// </summary>
-		/// <param name="ct">Ciphertext with IV appended to front</param>
+		/// <param name="ct">Шифротекст с прицепленным к концу IV</param>
 		/// <returns>Plaintext</returns>
 		public string Decrypt_CBC(string ct)
 		{
@@ -145,10 +146,10 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// Decrypts a byte array in CBC mode.
-		/// IV must be created and saved manually.
+		/// Расшифровка массива байтов в CBC .
+		/// IV должен быть создан и сохранен вручную.
 		/// </summary>
-		/// <param name="ct">Ciphertext data to decrypt</param>
+		/// <param name="ct"> Шифротекстовые данные для расшифровки </param>
 		/// <returns>Plaintext</returns>
 		public byte[] Decrypt_CBC(byte[] ct)
 		{
@@ -156,10 +157,10 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// Encrypts a byte array in CBC mode.
-		/// IV must be created and saved manually.
+		/// Шифровка массива байтов в СВС
+		/// IV должен быть создан и сохранен вручную.
 		/// </summary>
-		/// <param name="pt">Plaintext data to encrypt</param>
+		/// <param name="pt">Входной текст для шифрования</param>
 		/// <returns>Ciphertext</returns>
 		public byte[] Encrypt_CBC(byte[] pt)
 		{
@@ -167,20 +168,20 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// Encrypt a string in ECB mode
+        /// Шифровка текста в ЕСВ
 		/// </summary>
-		/// <param name="pt">Plaintext to encrypt as ascii string</param>
-		/// <returns>hex value of encrypted data</returns>
+		/// <param name="pt">Исходный текст для шифровки как ASCII-строка</param>
+		/// <returns>Hex-значения шифрованных данных </returns>
 		public string Encrypt_ECB(string pt)
 		{
 			return ByteToHex(Encrypt_ECB(Encoding.ASCII.GetBytes(pt)));
 		}
 
 		/// <summary>
-		/// Decrypts a string (ECB)
+        /// Дешифрует строка ECB
 		/// </summary>
-		/// <param name="ct">hHex string of the ciphertext</param>
-		/// <returns>Plaintext ascii string</returns>
+		/// <param name="ct">HEX строка шифротектса </param>
+		/// <returns>ASCII строка обычного текста</returns>
 		public string Decrypt_ECB(string ct)
 		{
 			return Encoding.ASCII.GetString(Decrypt_ECB(HexToByte(ct))).Replace("\0", "");

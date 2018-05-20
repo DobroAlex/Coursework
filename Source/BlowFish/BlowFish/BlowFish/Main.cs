@@ -6,7 +6,38 @@ namespace Main
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Input key (up to 16 char):");
+            short switcher = 0;
+            while (switcher != 3)
+            {
+                Console.WriteLine("1 -- To encrypt text; 2 -- To decrypt text; 3 -- To exit");
+                switcher = short.Parse(Console.ReadLine());
+                if (switcher == 1)
+                {
+                    Console.WriteLine("Input key (up to 16 char):");
+                    string key = Console.ReadLine();
+                    Console.WriteLine("Input string to encrypt:");
+                    string plainText = Console.ReadLine();
+                    Console.WriteLine(Encrypt(plainText, key));
+                }
+                else if (switcher == 2)
+                {
+					Console.WriteLine("Input key (up to 16 char):");
+					string key = Console.ReadLine();
+					Console.WriteLine("Input string to decrypt:");
+					string chipherText = Console.ReadLine();
+					Console.WriteLine(Decrypt(chipherText, key));
+                }
+                else if (switcher == 3)
+                {
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine("Unrecognized");
+                    Environment.Exit(-1);
+                }
+            }
+            /*Console.WriteLine("Input key (up to 16 char):");
             string key = Console.ReadLine();
             if (key.Length>16 || key.Length==0)
             {
@@ -20,6 +51,17 @@ namespace Main
             string chipherTxt = b.Encrypt_CBC(plainTxt);
             Console.WriteLine("chipher text is :" + chipherTxt);
             Console.WriteLine("Decrypted text is: "+ b.Decrypt_CBC(chipherTxt));
+            */
+        }
+        public static  string Encrypt (string plainText, string key)
+        {
+            BlowFishCS.BlowFish b = new BlowFish(key);
+            return b.Encrypt_CBC(plainText);
+        }
+        public static string Decrypt(string chipherText, string key)
+        {
+            BlowFishCS.BlowFish b = new BlowFish(key);
+            return b.Decrypt_CBC(chipherText);
         }
     }
 }
