@@ -1,0 +1,5 @@
+/home/myfamily/MyStudy/Coursework/Source/BlowFish/BlowFish/BlowFish/bin/Debug/BlowFish.exe
+/home/myfamily/MyStudy/Coursework/Source/BlowFish/BlowFish/BlowFish/bin/Debug/BlowFish.pdb
+/home/myfamily/MyStudy/Coursework/Source/BlowFish/BlowFish/BlowFish/obj/x86/Debug/BlowFish.csproj.CoreCompileInputs.cache
+/home/myfamily/MyStudy/Coursework/Source/BlowFish/BlowFish/BlowFish/obj/x86/Debug/BlowFish.exe
+/home/myfamily/MyStudy/Coursework/Source/BlowFish/BlowFish/BlowFish/obj/x86/Debug/BlowFish.pdb

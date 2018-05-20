@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{4CC99904-92F9-458D-B4A1-200E91BC8FE3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlowFish/BlowFish.cs">
+    <Files>
+      <File FileName="BlowFish/Main.cs" Line="3" Column="15" />
+      <File FileName="BlowFish/BlowFish.cs" Line="858" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BlowFish PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
