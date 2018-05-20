@@ -40,20 +40,20 @@
  *  
  *  
  *---CTR---
- *  CTR mode uses an IV and a counter to encrypt each block individually. 
- *  Like ECB mode, with the added protection of an IV to make sure the same plaintext encrypted with the same key yeilds a different result.
- *  The counter ensures that no patterns will be visible. CTR mode is secure and can be optimized for multi-threaded applications.
- * 
- * For more information on cipher modes of operation, see http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation
+ * Использует IVи счётчик для индивидуальной шифровки каждого блока
+ *  Подобно ECB с добавочной защитой IV для уверенности, что тот же исходный текст зашифрованный тем же ключом породит разные резульаты
+ *  Счётчик  служит для гарантии отсутствия видимого паттерна. CTR безопасен и может быть оптимизирован для мультипоточности
+ *  
+ * больше информации о режимах работы http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation
  */
 
-/*Things to remember
- * -Always use unique initialization vectors when using CBC and CTR mode. SetRandomIV will do the job for you.
- * -Blowfish is only as secure as the key you provide. When derriving a key from a password, use a secure hash function such as SHA-256 to create the key.
- * -Read "Which mode should I use?" and choose the best mode for your application
- * -Use a MAC to ensure that the ciphertext and IV have not been modified.
- * -Do not use the compatibility mode unless neccessary.
- */
+/*Nota Bene:
+ * Всегда используйте  уникальные векторы при использовании СВС и CTR.SetRandomIV сделает все за вас
+ * Blowfish безопасен настолько, насколько безопасен предоставленный ключ. При получении ключа из пароля используйте хэш типа SHA256 для генерации ключа
+ * Читайте"Какой ключ использовать?"и выбирайте лучший режим
+ * -Используйте  MAC для гарантированного отсутствия модификации шифротекста и IV
+ * -Не используйте режим совместимости с JS без необходимости.
+ * /
 
 using System;
 using System.Text;
