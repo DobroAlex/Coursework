@@ -13,19 +13,12 @@ namespace Main
                 switcher = short.Parse(Console.ReadLine());
                 if (switcher == 1)
                 {
-                    Console.WriteLine("Input key (up to 28 char):");
-                    string key = Console.ReadLine();
-                    Console.WriteLine("Input string to encrypt:");
-                    string plainText = Console.ReadLine();
-                    Console.WriteLine(Encrypt(plainText, key));
+
+                    Console.WriteLine(Encrypt());
                 }
                 else if (switcher == 2)
                 {
-					Console.WriteLine("Input key (up to 28 char):");
-					string key = Console.ReadLine();
-					Console.WriteLine("Input string to decrypt:");
-					string chipherText = Console.ReadLine();
-					Console.WriteLine(Decrypt(chipherText, key));
+		    Console.WriteLine(Decrypt());
                 }
                 else if (switcher == 3)
                 {
@@ -53,15 +46,31 @@ namespace Main
             Console.WriteLine("Decrypted text is: "+ b.Decrypt_CBC(chipherTxt));
             */
         }
-        public static  string Encrypt (string plainText, string key)
+        public static  string Encrypt ()
         {
-            BlowFishCS.BlowFish b = new BlowFish(key);
+            Console.WriteLine("Input key (up to 28 char):");
+	    string key = KeyParse();
+            Console.WriteLine("Input string to encrypt:");
+            string plainText = Console.ReadLine();
             return b.Encrypt_CBC(plainText);
         }
-        public static string Decrypt(string chipherText, string key)
+        public static string Decrypt()
         {
+            Console.WriteLine("Input key (up to 28 char):");
+            string key = KeyParse();
+             Console.WriteLine("Input string to decrypt:");
+	     string chipherText = Console.ReadLine();    
             BlowFishCS.BlowFish b = new BlowFish(key);
             return b.Decrypt_CBC(chipherText);
         }
+	public static string KeyParse()
+	{
+	     string key = Console.ReadLine();
+	     while (key.Length >= 28 || key.Length == 0)
+	     {
+		key = Console.ReadLine();     
+	     }
+	     return key;
+	}
     }
 }
