@@ -138,7 +138,7 @@ namespace BlowFishCS
 		/// Расшифровка строки в CBC 
 		/// </summary>
 		/// <param name="ct">Шифротекст с прицепленным к концу IV</param>
-		/// <returns>Plaintext</returns>
+		/// <returns>Входной текст</returns>
 		public string Decrypt_CBC(string ct)
 		{
 			IV = HexToByte(ct.Substring(0, 16));
@@ -150,7 +150,7 @@ namespace BlowFishCS
 		/// IV должен быть создан и сохранен вручную.
 		/// </summary>
 		/// <param name="ct"> Шифротекстовые данные для расшифровки </param>
-		/// <returns>Plaintext</returns>
+		/// <returns>Входной текст</returns>
 		public byte[] Decrypt_CBC(byte[] ct)
 		{
 			return Crypt_CBC(ct, true);
@@ -161,7 +161,7 @@ namespace BlowFishCS
 		/// IV должен быть создан и сохранен вручную.
 		/// </summary>
 		/// <param name="pt">Входной текст для шифрования</param>
-		/// <returns>Ciphertext</returns>
+		/// <returns>Шифротекст</returns>
 		public byte[] Encrypt_CBC(byte[] pt)
 		{
 			return Crypt_CBC(pt, false);
@@ -188,30 +188,30 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// Encrypts a byte array in ECB mode
+		// Шифрует массив байтов в ECB 
 		/// </summary>
-		/// <param name="pt">Plaintext data</param>
-		/// <returns>Ciphertext bytes</returns>
+		/// <param name="pt">Входной текст</param>
+		/// <returns>Байтовый шифротекст</returns>
 		public byte[] Encrypt_ECB(byte[] pt)
 		{
 			return Crypt_ECB(pt, false);
 		}
 
 		/// <summary>
-		/// Decrypts a byte array (ECB)
+		/// Расшифрует массив байтов (ЕСВ)
 		/// </summary>
-		/// <param name="ct">Ciphertext byte array</param>
-		/// <returns>Plaintext</returns>
+		/// <param name="ct">Шифротекстовый массив байтов</param>
+		/// <returns>Входной текст</returns>
 		public byte[] Decrypt_ECB(byte[] ct)
 		{
 			return Crypt_ECB(ct, true);
 		}
 
 		/// <summary>
-		/// Encrypts a string (CTR)
+		/// Шифрует строку в CTR
 		/// </summary>
-		/// <param name="pt">The plaintext to encrypt</param>
-		/// <returns>The ciphertext</returns>
+		/// <param name="pt">Входной текст для шифрования</param>
+		/// <returns>Шифротекст</returns>
 		public string Encrypt_CTR(string pt)
 		{
 			if (!IVSet)
@@ -220,10 +220,10 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// Decrypt a string (CTR)
+		/// Дешифрует строку в CTR
 		/// </summary>
-		/// <param name="ct">The ciphertext to decrypt</param>
-		/// <returns>The plaintext</returns>
+		/// <param name="ct">Шифротекст для расшифроки</param>
+		/// <returns>Входные данные</returns>
 		public string Decrypt_CTR(string ct)
 		{
 			IV = HexToByte(ct.Substring(0, 16));
@@ -231,7 +231,7 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// Initialization vector for CBC mode.
+		/// Вектор инициализации для CBC
 		/// </summary>
 		public byte[] IV
 		{
@@ -257,9 +257,9 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// Creates and sets a random initialization vector.
+		/// Создает и устанавливает случмайный IV
 		/// </summary>
-		/// <returns>The random IV</returns>
+		/// <returns>Слуайный IV</returns>
 		public byte[] SetRandomIV()
 		{
 			InitVector = new byte[8];
@@ -270,25 +270,25 @@ namespace BlowFishCS
 
 		#endregion
 
-		#region Cryptography
+		#region Критпография
 
 		/// <summary>
-		/// Sets up the S-blocks and the key
+		/// Утснаовка S-блков и ключа
 		/// </summary>
-		/// <param name="cipherKey">Block cipher key (1-448 bits)</param>
+		/// <param name="cipherKey">Блок шифроключа (1-448 bits)</param>
 		private void SetupKey(byte[] cipherKey)
 		{
 			bf_P = SetupP();
-			//set up the S blocks
+			//установка S-блоков
 			bf_s0 = SetupS0();
 			bf_s1 = SetupS1();
 			bf_s2 = SetupS2();
 			bf_s3 = SetupS3();
 
-			key = new byte[cipherKey.Length]; // 448 bits
+			key = new byte[cipherKey.Length]; // до  448 бит
 			if (cipherKey.Length > 56)
 			{
-				throw new Exception("Key too long. 56 bytes required.");
+				throw new Exception("Key too long. 56 bytes required."); //до 56 битов, т.е до 28 C#-char
 			}
 
 			Buffer.BlockCopy(cipherKey, 0, key, 0, cipherKey.Length);
@@ -336,11 +336,11 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// Encrypts or decrypts data in ECB mode
+		/// Шифрует или дешифрует данные в ECB режиме
 		/// </summary>
-		/// <param name="text">plain/ciphertext</param>
-		/// <param name="decrypt">true to decrypt, false to encrypt</param>
-		/// <returns>(En/De)crypted data</returns>
+		/// <param name="text">Исходный текст/шифротекст</param>
+		/// <param name="decrypt">true для расшифровки, false для шифровки </param>
+		/// <returns>ШИфрованные или расшифрованные данные</returns>
 		private byte[] Crypt_ECB(byte[] text, bool decrypt)
 		{
 			int paddedLen = (text.Length % 8 == 0 ? text.Length : text.Length + 8 - (text.Length % 8));
@@ -390,11 +390,11 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// Encrypts or decrypts data in CBC mode
+		/// Шифрует или дешифрует данные в режиме CBC
 		/// </summary>
-		/// <param name="text">plain/ciphertext</param>
-		/// <param name="decrypt">true to decrypt, false to encrypt</param>
-		/// <returns>(En/De)crypted data</returns>
+		/// <param name="text">Исходный / шифротекст</param>
+		/// <param name="decrypt">true для расшифровки, false для шифровки</param>
+		/// <returns>Шифрованная/расшифрованна дата</returns>
 		private byte[] Crypt_CBC(byte[] text, bool decrypt)
 		{
 			if (!IVSet)
@@ -437,10 +437,10 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// XoR encrypts two 8 bit blocks
+		///XOR шифрует два 8-битных блока
 		/// </summary>
-		/// <param name="block">8 bit block 1</param>
-		/// <param name="iv">8 bit block 2</param>
+		/// <param name="block"> первый 8-битный блок</param>
+		/// <param name="iv">второй 8-битный блок</param>
 		private void XorBlock(ref byte[] block, byte[] iv)
 		{
 			for (int i = 0; i < block.Length; i++)
@@ -450,9 +450,9 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// Encrypts a 64 bit block
+		/// Шифрует 64-битный блок
 		/// </summary>
-		/// <param name="block">The 64 bit block to encrypt</param>
+		/// <param name="block">64-битный блок для шифровки</param>
 		private void BlockEncrypt(ref byte[] block)
 		{
 			SetBlock(block);
@@ -461,9 +461,9 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// Decrypts a 64 bit block
+		/// Дешифрует   64 битный блок
 		/// </summary>
-		/// <param name="block">The 64 bit block to decrypt</param>
+		/// <param name="block">64-битный блок для дешифровки</param>
 		private void BlockDecrypt(ref byte[] block)
 		{
 			SetBlock(block);
@@ -472,9 +472,9 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// Splits the block into the two uint values
+		/// разделяет блоки на два unsigned значения
 		/// </summary>
-		/// <param name="block">the 64 bit block to setup</param>
+		/// <param name="block">64-битный блок для установки </param>
 		private void SetBlock(byte[] block)
 		{
 			byte[] block1 = new byte[4];
@@ -489,7 +489,7 @@ namespace BlowFishCS
 			}
 			else
 			{
-				//ToUInt32 requires the bytes in reverse order
+				//ToUInt32 требует байты в обратном порядке
 				Array.Reverse(block1);
 				Array.Reverse(block2);
 				xl_par = BitConverter.ToUInt32(block1, 0);
@@ -498,9 +498,9 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// Converts the two uint values into a 64 bit block
+		/// Конвертирует два unsigned в 64-битный блок
 		/// </summary>
-		/// <param name="block">64 bit buffer to receive the block</param>
+		/// <param name="block">64 битный буффер для получения блока</param>
 		private void GetBlock(ref byte[] block)
 		{
 			byte[] block1 = new byte[4];
@@ -515,17 +515,17 @@ namespace BlowFishCS
 				block1 = BitConverter.GetBytes(xl_par);
 				block2 = BitConverter.GetBytes(xr_par);
 
-				//GetBytes returns the bytes in reverse order
+				//GetBytes возвращает байты в обратном порядке
 				Array.Reverse(block1);
 				Array.Reverse(block2);
 			}
-			//join the block
+			//конкатенация блока
 			Buffer.BlockCopy(block1, 0, block, 0, 4);
 			Buffer.BlockCopy(block2, 0, block, 4, 4);
 		}
 
 		/// <summary>
-		/// Runs the blowfish algorithm (standard 16 rounds)
+		/// Запускает  BLOWFISH алгоритм (стандартные 16 раундов)
 		/// </summary>
 		private void encipher()
 		{
@@ -544,7 +544,7 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// Runs the blowfish algorithm in reverse (standard 16 rounds)
+		/// Запускает  BLOWFISH в  реверсивном порядке (стандартные 16 раундов)
 		/// </summary>
 		private void decipher()
 		{
@@ -563,11 +563,11 @@ namespace BlowFishCS
 		}
 
 		/// <summary>
-		/// one round of the blowfish algorithm
+		/// один раунд  blowfish 
 		/// </summary>
-		/// <param name="a">See spec</param>
-		/// <param name="b">See spec</param>
-		/// <param name="n">See spec</param>
+		/// <param name="a">См спецификацию</param>
+		/// <param name="b">См спецификацию</param>
+		/// <param name="n">См спецификацию</param>
 		/// <returns></returns>
 		private uint round(uint a, uint b, uint n)
 		{
@@ -579,11 +579,10 @@ namespace BlowFishCS
 
 		#endregion
 
-		#region SBLOCKS
-		//SBLOCKS ARE THE HEX DIGITS OF PI. 
-		//The amount of hex digits can be increased if you want to experiment with more rounds and longer key lengths
-
-		//Increase the size of this array when increasing the number of rounds
+		#region S-блоки
+		//S-блоки являются  HEX - цифрами  Пи. 
+		//Кол-во  hex цифир может быть увеличено,  если хочется поигарться с большим кол-вом раундов и более длинным ключом
+		//Увеличьте размер ЭТОГО массива при увелечении числа раундов
 		private uint[] SetupP()
 		{
 			return new uint[] {
@@ -791,33 +790,33 @@ namespace BlowFishCS
 
 		#endregion
 
-		#region Conversions
+		#region Преобразования
 
-		//gets the first byte in a uint
+		//Получает первый байт в unsigned
 		private byte wordByte0(uint w)
 		{
 			return (byte)(w / 256 / 256 / 256 % 256);
 		}
 
-		//gets the second byte in a uint
+		//Получает второй  байт в unsigned
 		private byte wordByte1(uint w)
 		{
 			return (byte)(w / 256 / 256 % 256);
 		}
 
-		//gets the third byte in a uint
+		//Получает третий  байт в unsigned
 		private byte wordByte2(uint w)
 		{
 			return (byte)(w / 256 % 256);
 		}
 
-		//gets the fourth byte in a uint
+		//Получает четвертый  байт в unsigned
 		private byte wordByte3(uint w)
 		{
 			return (byte)(w % 256);
 		}
 
-		//converts a byte array to a hex string
+		//Конвертирует массив байтов в hex-строку
 		private string ByteToHex(byte[] bytes)
 		{
 			StringBuilder s = new StringBuilder();
@@ -826,7 +825,7 @@ namespace BlowFishCS
 			return s.ToString();
 		}
 
-		//converts a hex string to a byte array
+		//Конвертирует hex-строку в массив байтов 
 		private byte[] HexToByte(string hex)
 		{
 			byte[] r = new byte[hex.Length / 2];
@@ -839,7 +838,7 @@ namespace BlowFishCS
 			return r;
 		}
 
-		//converts a single hex character to it's decimal value
+		//Конвертирует одиночный hex-символ в его десятичное значение
 		private byte GetHex(char x)
 		{
 			if (x <= '9' && x >= '0')
