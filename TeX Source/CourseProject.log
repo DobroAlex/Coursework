@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  21 MAY 2018 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  21 MAY 2018 16:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1165,60 +1165,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--99
  []
 
 
-Overfull \hbox (3.37051pt too wide) in paragraph at lines 104--107
+Overfull \hbox (3.37051pt too wide) in paragraph at lines 104--108
 \T2A/cmr/m/n/14.4 ком-му-ни-ка-ци-он-ные ком-па-нии США: AT&T, SBC, BellSouth, 
 Verizon. Про-
  []
 
 
-Overfull \hbox (1.95898pt too wide) in paragraph at lines 108--112
+Overfull \hbox (1.95898pt too wide) in paragraph at lines 109--113
 []\T2A/cmr/bx/n/14.4 Tailored Access Operations\T2A/cmr/m/n/14.4 . Под-раз-де-л
 е-ние АНБ, со-здан-ное в 1997
  []
 
 [16]
-Overfull \hbox (11.52237pt too wide) in paragraph at lines 113--115
-\T2A/cmr/m/n/14.4 ет го-то-вые бес-плат-ные open-source про-дук-ты, на-при-мер,
- Google MapReduce
- []
-
-
-Overfull \hbox (7.99542pt too wide) in paragraph at lines 119--120
+Overfull \hbox (7.99542pt too wide) in paragraph at lines 120--121
 \T2A/cmr/m/n/14.4 щетс-вен-но-сти на тех-но-ло-ги-ях PGP, шиф-ро-ван-ном мес-се
 н-дже-ре Bitmessage
  []
 
 
-Overfull \hbox (9.938pt too wide) in paragraph at lines 122--124
+Overfull \hbox (9.938pt too wide) in paragraph at lines 123--125
 []\T2A/cmr/bx/n/14.4 NarusInsight\T2A/cmr/m/n/14.4 . Кла-стер-ная си-сте-ма шпи
 -о-на-жа, раз-ра-ба-ты-ва-е-мая ком-
  []
 
 [17]
-Overfull \hbox (2.99536pt too wide) in paragraph at lines 128--132
+Overfull \hbox (2.99536pt too wide) in paragraph at lines 129--133
 []\T2A/cmr/bx/n/14.4 MUSCULAR\T2A/cmr/m/n/14.4 . Шпи-он-ская про-грам-ма сле-же
 -ния, ис-поль-зу-е-мая Цен-
  []
 
 
-Overfull \hbox (4.68303pt too wide) in paragraph at lines 128--132
+Overfull \hbox (4.68303pt too wide) in paragraph at lines 129--133
 \T2A/cmr/m/n/14.4 чив-шая из-вест-ность бла-го-да-ря Э. Сно-уде-ну в 2013, од-н
 о-вре-мен-но с PRISM
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--139
+Underfull \hbox (badness 10000) in paragraph at lines 137--140
 
  []
 
 [18]
-Overfull \hbox (0.54019pt too wide) in paragraph at lines 147--148
+Overfull \hbox (0.54019pt too wide) in paragraph at lines 148--149
 \T2A/cmr/m/n/14.4 Раз-ра-бо-та-на сов-мест-ны-ми уси-ли-я-ми ФСБ Рос-сии, Гос-к
 ом-свя-зи Рос-
  []
 
 
-Overfull \hbox (3.40025pt too wide) in paragraph at lines 147--148
+Overfull \hbox (3.40025pt too wide) in paragraph at lines 148--149
 \T2A/cmr/m/n/14.4 про-слу-ши-ва-ния те-ле-фон-ных пе-ре-го-во-ров, кон-тро-ля т
 ех-ни-че-ских ка-
  []
@@ -1323,33 +1317,67 @@ Underfull \hbox (badness 4967) in paragraph at lines 26--27
 -па:
  []
 
-) [39] (./CourseProject.aux) ) 
+
+Underfull \hbox (badness 1342) in paragraph at lines 30--31
+[]\T2A/cmr/m/n/14.4 The NSA Is Building the Country's Biggest Spy Center (Watch
+
+ []
+
+
+Underfull \hbox (badness 2990) in paragraph at lines 31--32
+[]\T2A/cmr/m/n/14.4 The NSA Uses Powerful Toolbox in Effort to Spy on Global
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 31--32
+\T2A/cmr/m/n/14.4 Networks, Der Spiegel [Элек-трон-ный ре-сурс] / Ре-жим до-сту
+-па:
+ []
+
+[39]
+Underfull \hbox (badness 2126) in paragraph at lines 35--36
+\T2A/cmr/m/n/14.4 others , The Guardian [Элек-трон-ный ре-сурс] / Ре-жим до-сту
+-па:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+[]\T2A/cmr/m/n/14.4 Закон Яро-вой мо-жет быть на ру-ку госкор-по-ра-ции ѕРо-
+ []
+
+
+Underfull \hbox (badness 4752) in paragraph at lines 44--45
+\T2A/cmr/m/n/14.4 стехї, ВЕ-ДО-МО-СТИ [Элек-трон-ный ре-сурс] / Ре-жим до-сту-п
+а:
+ []
+
+[40]) [41] (./CourseProject.aux) ) 
 Here is how much of TeX's memory you used:
- 4923 strings out of 493013
- 62182 string characters out of 6135682
- 127903 words of memory out of 5000000
- 8250 multiletter control sequences out of 15000+600000
+ 4942 strings out of 493013
+ 62326 string characters out of 6135682
+ 127979 words of memory out of 5000000
+ 8269 multiletter control sequences out of 15000+600000
  34431 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  27i,5n,43p,2771b,231s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ba
-se/8r.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/sha
-re/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-fbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-bx3583.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
-i1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on CourseProject.pdf (39 pages, 290588 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvip
+s/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr
+/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfbx3583.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfti1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on CourseProject.pdf (41 pages, 294117 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
+ 205 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
