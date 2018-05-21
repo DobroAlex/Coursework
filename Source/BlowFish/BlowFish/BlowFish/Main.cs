@@ -13,7 +13,7 @@ namespace Main
                 switcher = short.Parse(Console.ReadLine());
                 if (switcher == 1)
                 {
-                    Console.WriteLine("Input key (up to 16 char):");
+                    Console.WriteLine("Input key (up to 28 char):");
                     string key = Console.ReadLine();
                     Console.WriteLine("Input string to encrypt:");
                     string plainText = Console.ReadLine();
@@ -21,7 +21,7 @@ namespace Main
                 }
                 else if (switcher == 2)
                 {
-					Console.WriteLine("Input key (up to 16 char):");
+					Console.WriteLine("Input key (up to 28 char):");
 					string key = Console.ReadLine();
 					Console.WriteLine("Input string to decrypt:");
 					string chipherText = Console.ReadLine();
