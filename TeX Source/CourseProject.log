@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  21 MAY 2018 18:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.17)  21 MAY 2018 18:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1154,19 +1154,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
 (./0-Intoduction.tex [1
 
-] [3]
-Overfull \hbox (5.08612pt too wide) in paragraph at lines 22--25
+] <Images/AntiMail.png, id=21, 450.9648pt x 424.9476pt>
+File: Images/AntiMail.png Graphic file (type png)
+
+<use Images/AntiMail.png>
+Package pdftex.def Info: Images/AntiMail.png used on input line 15.
+(pdftex.def)             Requested size: 360.77231pt x 339.95853pt.
+ [3 <./Images/AntiMail.png>]
+Overfull \hbox (5.08612pt too wide) in paragraph at lines 25--28
 \T2A/cmr/m/n/14.4 ний поль-зо-ва-те-лей циф-ро-вых си-стем, ис-поль-зу-е-мые ки
 бер-преступниками
  []
 
-[4]) (./1-SecrecyOfCorrespondence.tex [5] [6]
+[4] [5]) (./1-SecrecyOfCorrespondence.tex [6] [7]
 Overfull \hbox (2.4474pt too wide) in paragraph at lines 36--37
 \T2A/cmr/m/n/14.4 про-слу-ши-ва-ние те-ле-фон-ных пе-ре-го-во-ров, сня-тие ин-ф
 ор-ма-ции с тех-
  []
 
-[7] [8]) (./2-DigitalThreat.tex
+[8] [9]) (./2-DigitalThreat.tex
 Overfull \hbox (6.81454pt too wide) in paragraph at lines 12--14
 \T2A/cmr/m/it/14.4 зы ин-фор-ма-ци-он-ной без-опас-но-сти \T2A/cmr/m/n/14.4 -- 
 угро-зой кон-фи-ден-ци-аль-но-сти (непра-
@@ -1178,112 +1184,145 @@ Overfull \hbox (2.71844pt too wide) in paragraph at lines 22--23
 ма-нии пред-став-ля-ет со-бой про-
  []
 
-[9]
+[10]
 Overfull \hbox (24.39294pt too wide) in paragraph at lines 28--30
 []\T2A/cmr/m/n/14.4 Рассмотрим от-дель-но са-мо-го рас-про-стра-нјн-но-го пред-
 ста-ви-те-ля SpyWare
  []
 
-[10]
-Overfull \hbox (19.55403pt too wide) in paragraph at lines 41--43
+[11] <Images/KeyLog.jpg, id=56, 74.4381pt x 63.3567pt>
+File: Images/KeyLog.jpg Graphic file (type jpg)
+ <use Images/KeyLog.jpg>
+Package pdftex.def Info: Images/KeyLog.jpg used on input line 43.
+(pdftex.def)             Requested size: 223.31369pt x 190.06961pt.
+
+Overfull \hbox (19.55403pt too wide) in paragraph at lines 46--48
 \T2A/cmr/m/n/14.4 что сред-ний ме-не-джер на-жи-ма-ет при-мер-но 23000 кла-ви-ш
 и в день(обозначим
  []
 
-
-Overfull \hbox (6.48367pt too wide) in paragraph at lines 47--48
+[12 <./Images/KeyLog.jpg>]
+Overfull \hbox (6.48367pt too wide) in paragraph at lines 52--53
 \T2A/cmr/bx/n/14.4 ло-век в се-ре-дине>> \T2A/cmr/m/n/14.4 или <<Ата-ка по-сред
 -ни-ка>> (<<Man in the midle>>, MITM).
  []
 
 
-Overfull \hbox (6.51833pt too wide) in paragraph at lines 49--50
+Overfull \hbox (6.51833pt too wide) in paragraph at lines 54--55
 []\T2A/cmr/m/n/14.4 Современные про-то-ко-лы ком-му-ни-ка-ции ис-поль-зу-ют раз
 -лич-ные крип-
  []
 
-[11]
-Overfull \hbox (7.98795pt too wide) in paragraph at lines 63--65
+[13]
+Overfull \hbox (7.98795pt too wide) in paragraph at lines 68--70
 \T2A/cmr/m/n/14.4 пи-си (ЭЦП, digital signature, DS), иден-ти-фи-ка-ция/аутенти
 фикация, аутен-
  []
 
 
-Overfull \hbox (88.84915pt too wide) in paragraph at lines 63--65
+Overfull \hbox (88.84915pt too wide) in paragraph at lines 68--70
 \T2A/cmr/m/n/14.4 раз-де-лить на пас-сив-ные и ак-тив-ные: при пас-сив-ных ата-
 ках взлом-щик(криптоаналитик)
  []
 
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
-
-Overfull \hbox (4.51729pt too wide) in paragraph at lines 84--85
+[15]
+Overfull \hbox (4.51729pt too wide) in paragraph at lines 89--90
 \T2A/cmr/m/n/14.4 Современные за-ко-но-твор-че-ские ини-ци-а-ти-вы ве-ду-щих ст
 ран Ев-ро-пы, Аме-
  []
 
-[14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 96--99
+[16] <Images/ChinaControl.jpg, id=78, 534.49687pt x 680.5425pt>
+File: Images/ChinaControl.jpg Graphic file (type jpg)
 
- []
+<use Images/ChinaControl.jpg>
+Package pdftex.def Info: Images/ChinaControl.jpg used on input line 105.
+(pdftex.def)             Requested size: 267.24777pt x 340.27042pt.
 
 
-Overfull \hbox (3.37051pt too wide) in paragraph at lines 104--108
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (3.37051pt too wide) in paragraph at lines 112--116
 \T2A/cmr/m/n/14.4 ком-му-ни-ка-ци-он-ные ком-па-нии США: AT&T, SBC, BellSouth, 
 Verizon. Про-
  []
 
-
-Overfull \hbox (1.95898pt too wide) in paragraph at lines 109--113
+[17]
+Overfull \hbox (1.95898pt too wide) in paragraph at lines 117--121
 []\T2A/cmr/bx/n/14.4 Tailored Access Operations\T2A/cmr/m/n/14.4 . Под-раз-де-л
 е-ние АНБ, со-здан-ное в 1997
  []
 
-[16]
-Overfull \hbox (7.99542pt too wide) in paragraph at lines 120--121
+[18 <./Images/ChinaControl.jpg>]
+<Images/Boundless.jpg, id=85, 702.625pt x 526.96875pt>
+File: Images/Boundless.jpg Graphic file (type jpg)
+
+<use Images/Boundless.jpg>
+Package pdftex.def Info: Images/Boundless.jpg used on input line 125.
+(pdftex.def)             Requested size: 351.31163pt x 263.48372pt.
+
+Overfull \hbox (7.99542pt too wide) in paragraph at lines 131--132
 \T2A/cmr/m/n/14.4 щетс-вен-но-сти на тех-но-ло-ги-ях PGP, шиф-ро-ван-ном мес-се
 н-дже-ре Bitmessage
  []
 
-
-Overfull \hbox (9.938pt too wide) in paragraph at lines 123--125
+[19 <./Images/Boundless.jpg>]
+Overfull \hbox (9.938pt too wide) in paragraph at lines 134--136
 []\T2A/cmr/bx/n/14.4 NarusInsight\T2A/cmr/m/n/14.4 . Кла-стер-ная си-сте-ма шпи
 -о-на-жа, раз-ра-ба-ты-ва-е-мая ком-
  []
 
-[17]
-Overfull \hbox (2.99536pt too wide) in paragraph at lines 129--133
+<Images/Muscular.jpg, id=90, 540.0175pt x 405.515pt>
+File: Images/Muscular.jpg Graphic file (type jpg)
+ <use Images/Muscular.jpg>
+Package pdftex.def Info: Images/Muscular.jpg used on input line 145.
+(pdftex.def)             Requested size: 432.01459pt x 324.41243pt.
+
+Overfull \hbox (2.99536pt too wide) in paragraph at lines 140--148
 []\T2A/cmr/bx/n/14.4 MUSCULAR\T2A/cmr/m/n/14.4 . Шпи-он-ская про-грам-ма сле-же
 -ния, ис-поль-зу-е-мая Цен-
  []
 
 
-Overfull \hbox (4.68303pt too wide) in paragraph at lines 129--133
+Overfull \hbox (4.68303pt too wide) in paragraph at lines 140--148
 \T2A/cmr/m/n/14.4 чив-шая из-вест-ность бла-го-да-ря Э. Сно-уде-ну в 2013, од-н
 о-вре-мен-но с PRISM
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--140
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 152--155
 
  []
 
-[18]
-Overfull \hbox (0.54019pt too wide) in paragraph at lines 148--149
+[21 <./Images/Muscular.jpg>]
+Overfull \hbox (0.54019pt too wide) in paragraph at lines 163--164
 \T2A/cmr/m/n/14.4 Раз-ра-бо-та-на сов-мест-ны-ми уси-ли-я-ми ФСБ Рос-сии, Гос-к
 ом-свя-зи Рос-
  []
 
 
-Overfull \hbox (3.40025pt too wide) in paragraph at lines 148--149
+Overfull \hbox (3.40025pt too wide) in paragraph at lines 163--164
 \T2A/cmr/m/n/14.4 про-слу-ши-ва-ния те-ле-фон-ных пе-ре-го-во-ров, кон-тро-ля т
 ех-ни-че-ских ка-
  []
 
-[19] [20] [21]) (./3-DataProtection.tex
+File: Images/Muscular.jpg Graphic file (type jpg)
+<use Images/Muscular.jpg>
+Package pdftex.def Info: Images/Muscular.jpg used on input line 170.
+(pdftex.def)             Requested size: 432.01459pt x 324.41243pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[22] [23] [24] [25]) (./3-DataProtection.tex
 Overfull \hbox (48.6847pt too wide) in paragraph at lines 11--14
 \T2A/cmr/m/n/14.4 ных тех-но-ло-ги-ях и о за-щи-те ин-фор-ма-ции>> вво-дит дис-
 ци-пли-нар-ную, гражданско-
@@ -1294,7 +1333,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
  []
 
-[22]
+[26]
 Overfull \hbox (25.49077pt too wide) in paragraph at lines 23--24
 \T2A/cmr/m/n/14.4 поль-зо-вать ва-ли-да-цию по-лу-чен-но-го про-дук-та с по-мо-
 щью хэш-функций,
@@ -1309,53 +1348,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Images/HowToTor.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<Images/HowToTor.pdf, id=93, 383.93437pt x 245.41687pt>
+<Images/HowToTor.pdf, id=113, 383.93437pt x 245.41687pt>
 File: Images/HowToTor.pdf Graphic file (type pdf)
 
 <use Images/HowToTor.pdf>
 Package pdftex.def Info: Images/HowToTor.pdf used on input line 33.
 (pdftex.def)             Requested size: 307.1479pt x 196.33376pt.
- [23]
+ [27]
 Overfull \hbox (9.16273pt too wide) in paragraph at lines 37--38
 []\T2A/cmr/m/n/14.4 Преимущества Tor и лу-ко-вой марш-ру-ти-за-ции:высокая сте-
 пень несвяз-
  []
 
-[24 <./Images/HowToTor.pdf>] [25]
+[28 <./Images/HowToTor.pdf>] [29]
 Overfull \hbox (3.63867pt too wide) in paragraph at lines 59--61
 \T2A/cmr/m/n/14.4 и ано-ним-ные. По-след-ние де-лят-ся на ре-мей-ле-ры шиф-ро-п
 ан-ков, MixMaster,
  []
 
-[26] [27]
+[30] [31]
 Overfull \hbox (15.97072pt too wide) in paragraph at lines 72--73
 []\T2A/cmr/m/n/14.4 Эхо-методы аудио-стеганографии, ис-поль-зу-ю-щие нерав-но-м
 ер-ные про-
  []
 
-<Images/steganography.png, id=114, 301.125pt x 150.5625pt>
+<Images/steganography.png, id=134, 301.125pt x 150.5625pt>
 File: Images/steganography.png Graphic file (type png)
 
 <use Images/steganography.png>
 Package pdftex.def Info: Images/steganography.png used on input line 80.
 (pdftex.def)             Requested size: 240.90031pt x 120.45015pt.
 
-<Images/PopularMessage.png, id=115, 602.25pt x 372.39125pt>
+<Images/PopularMessage.png, id=135, 602.25pt x 372.39125pt>
 File: Images/PopularMessage.png Graphic file (type png)
 
 <use Images/PopularMessage.png>
 Package pdftex.def Info: Images/PopularMessage.png used on input line 90.
 (pdftex.def)             Requested size: 240.89572pt x 148.95386pt.
- [28 <./Images/steganography.png (PNG copy)>]
-[29 <./Images/PopularMessage.png>]
-<Images/TelegramPopular.png, id=124, 573.14125pt x 341.275pt>
+ [32 <./Images/steganography.png (PNG copy)>]
+[33 <./Images/PopularMessage.png>]
+<Images/TelegramPopular.png, id=143, 573.14125pt x 341.275pt>
 File: Images/TelegramPopular.png Graphic file (type png)
 
 <use Images/TelegramPopular.png>
 Package pdftex.def Info: Images/TelegramPopular.png used on input line 116.
 (pdftex.def)             Requested size: 229.25243pt x 136.50757pt.
- [30]
-<Images/MTProto.png, id=128, 782.925pt x 750.805pt>
+ [34]
+<Images/MTProto.png, id=147, 782.925pt x 750.805pt>
 File: Images/MTProto.png Graphic file (type png)
  <use Images/MTProto.png>
 Package pdftex.def Info: Images/MTProto.png used on input line 123.
@@ -1364,7 +1403,7 @@ Package pdftex.def Info: Images/MTProto.png used on input line 123.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31 <./Images/TelegramPopular.png>] [32 <./Images/MTProto.png>]
+[35 <./Images/TelegramPopular.png>] [36 <./Images/MTProto.png>]
 Overfull \hbox (27.21156pt too wide) in paragraph at lines 139--140
 \OML/ztmcm/m/it/14.4 X[] \OT1/ztmcm/m/n/14.4 = \OMS/ztmcm/m/n/14.4 f\OML/ztmcm/
 m/it/14.4 tags; message; padding[]\OMS/ztmcm/m/n/14.4 g$\T2A/cmr/m/n/14.4 , в к
@@ -1386,31 +1425,31 @@ S/ztmcm/m/n/14.4 f\OML/ztmcm/m/it/14.4 tags; y[]; y[]; :::; y[]; r\OMS/ztmcm/m/
 n/14.4 g$\T2A/cmr/m/n/14.4 .
  []
 
-[33] [34]
+[37] [38]
 Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
-[35] [36]
+[39] [40]
 Overfull \hbox (36.09732pt too wide) in paragraph at lines 180--181
 \T2A/cmr/m/n/14.4 таб-ли-цу за-мен $\OML/ztmcm/m/it/14.4 S[] \OMS/ztmcm/m/n/14.
 4 ^^@ \OML/ztmcm/m/it/14.4 S[]$\T2A/cmr/m/n/14.4 , шиф-ру-ет 64-битную ну-ле-ву
 ю (0x0000000000000000)
  []
 
-[37]
+[41]
 Overfull \hbox (6.28021pt too wide) in paragraph at lines 189--190
 []\T2A/cmr/m/n/14.4 Исходный код ПО до-сту-пен по ад-ре-су Github.com/Coursewor
 k/Source,
  []
 
-[38]) (./Concluding.tex [39]) (./UsedLiterature.tex
+[42]) (./Concluding.tex [43]) (./UsedLiterature.tex
 Underfull \hbox (badness 1102) in paragraph at lines 20--21
 \T2A/cmr/m/n/14.4 да, За-мет-ки сис.админа [Элек-трон-ный ре-сурс] / Ре-жим до-
 сту-па:
  []
 
-[40
+[44
 
 ]
 Underfull \hbox (badness 3849) in paragraph at lines 26--27
@@ -1441,7 +1480,7 @@ Underfull \hbox (badness 3525) in paragraph at lines 31--32
 -па:
  []
 
-[41]
+[45]
 Underfull \hbox (badness 2126) in paragraph at lines 35--36
 \T2A/cmr/m/n/14.4 others , The Guardian [Элек-трон-ный ре-сурс] / Ре-жим до-сту
 -па:
@@ -1458,7 +1497,7 @@ Underfull \hbox (badness 4752) in paragraph at lines 44--45
 а:
  []
 
-[42]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 51--52
 []\T2A/cmr/m/n/14.4 The Most Popular Messaging App in Every Country,
  []
@@ -1479,7 +1518,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
-[43]
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 56--57
 []\T2A/cmr/m/n/14.4 A practical cryptanalysis of the Telegram messaging
  []
@@ -1490,15 +1529,15 @@ Underfull \hbox (badness 7415) in paragraph at lines 56--57
 па:
  []
 
-) [44] (./CourseProject.aux) ) 
+) [48] (./CourseProject.aux) ) 
 Here is how much of TeX's memory you used:
- 5902 strings out of 493013
- 77348 string characters out of 6135682
- 148729 words of memory out of 5000000
- 9182 multiletter control sequences out of 15000+600000
+ 5928 strings out of 493013
+ 77902 string characters out of 6135682
+ 148738 words of memory out of 5000000
+ 9202 multiletter control sequences out of 15000+600000
  34431 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,7n,43p,2783b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,7n,43p,2783b,242s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/ba
 se/8r.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/sha
 re/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-di
@@ -1513,10 +1552,10 @@ re/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1
 /public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
 i1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on CourseProject.pdf (44 pages, 617330 bytes).
+Output written on CourseProject.pdf (48 pages, 920815 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 150 compressed objects within 2 object streams
+ 245 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 50 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 75 words of extra memory for PDF output out of 10000 (max. 10000000)
 
