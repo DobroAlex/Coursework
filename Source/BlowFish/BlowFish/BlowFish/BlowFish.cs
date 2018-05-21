@@ -1,28 +1,22 @@
-﻿//Blowfish шифрование ( режимы ECB, CBC и CTR ) по стандартам  Брюса Шнайера: http://www.schneier.com/paper-blowfish-fse.html
+//Blowfish шифрование ( режимы ECB, CBC и CTR ) по стандартам  Брюса Шнайера: http://www.schneier.com/paper-blowfish-fse.html
 //Тестовые векторы взяты их: http://www.schneier.com/code/vectors.txt
 //нестандартный режим  для использования с JS crypto library найдент тут: http://etherhack.co.uk/symmetric/blowfish/blowfish.html
 
 
 /*Использование:
-
 Предоставьте ключь при создании объекта. Ключ может быть размер до 448 бит.
 Ключ может быть предоставлен hex-числом или массивом байтов:
   BlowFish b = new BlowFish("04B915BA43FEB5B6");
-
 Шифруемый текст может быть строкой или байтовым массивом:
   string plainText = "The quick brown fox jumped over the lazy dog.";
-
 Используйте Encrypt_* методы для шифрования в желаемом режиме.
 Для шифрования или дешифрования массива байтов используйте CBC или CTR , также необходимо предоставить вектор инициализации.
 Далее IV -- Initialization Vector
 РандомIV может быть создан вызовом SetRandomIV при использовании с IV-свойством, т.к метод потребуется для расшифровки данных.
 Безопасно, если IV известен атакающем, если этот IV не будет использоваться повторно НИКОГДА. IV используется автоматически при шифровании или дешифровании данных
-
   string cipherText = b.Encrypt_CBC(plainText);
   MessageBox.Show(cipherText);
-
 Используйте схожый режим работы для дешифра
-
   plainText = b.Decrypt_CBC(cipherText);
   MessageBox.Show(plainText);
 */
@@ -53,51 +47,38 @@
  * Читайте"Какой ключ использовать?"и выбирайте лучший режим
  * -Используйте  MAC для гарантированного отсутствия модификации шифротекста и IV
  * -Не используйте режим совместимости с JS без необходимости.
- * /
-
+*/
 using System;
 using System.Text;
 using System.Security.Cryptography;
-
 namespace BlowFishCS
 {
 	class BlowFish
 	{
 		#region "Глобальные константы и переменные  "
-
 		const int ROUNDS = 16; //стандарт =  16,  для увелечения числа раундов, bf_P должно равняться числу раундов. Используйте цифры Pi.
-
         //генератор случайных чиел для создания IV
 		
 		RNGCryptoServiceProvider randomSource;
-
 		//S-блоки
 		private uint[] bf_s0;
 		private uint[] bf_s1;
 		private uint[] bf_s2;
 		private uint[] bf_s3;
-
 		private uint[] bf_P;
-
 		//Ключ
 		private byte[] key;
-
 		//Полублоки
 		private uint xl_par;
 		private uint xr_par;
-
 		//инициализация Вектора для CBC и CTR
 		private byte[] InitVector;
 		private bool IVSet;
-
 		//For compatibility with the javascript crypto library:
 		//  http://etherhack.co.uk/symmetric/blowfish/blowfish.html
 		private bool nonStandardMethod;
-
 		#endregion
-
 		#region "Конструкторы"
-
 		/// <summary>
         /// Конструктор для hex-ключа
 		/// </summary>
@@ -107,7 +88,6 @@ namespace BlowFishCS
 			randomSource = new RNGCryptoServiceProvider();
 			SetupKey(HexToByte(hexKey));
 		}
-
 		/// <summary>
 		/// Конструктор для байтового ключа
 		/// </summary>
@@ -117,11 +97,8 @@ namespace BlowFishCS
 			randomSource = new RNGCryptoServiceProvider();
 			SetupKey(cipherKey);
 		}
-
 		#endregion
-
 		#region "Публик-методы"
-
 		/// <summary>
 		/// Шифрует строку в CBC 
 		/// </summary>
@@ -133,7 +110,6 @@ namespace BlowFishCS
 				SetRandomIV();
 			return ByteToHex(InitVector) + ByteToHex(Encrypt_CBC(Encoding.ASCII.GetBytes(pt)));
 		}
-
 		/// <summary>
 		/// Расшифровка строки в CBC 
 		/// </summary>
@@ -144,7 +120,6 @@ namespace BlowFishCS
 			IV = HexToByte(ct.Substring(0, 16));
 			return Encoding.ASCII.GetString(Decrypt_CBC(HexToByte(ct.Substring(16)))).Replace("\0", "");
 		}
-
 		/// <summary>
 		/// Расшифровка массива байтов в CBC .
 		/// IV должен быть создан и сохранен вручную.
@@ -155,7 +130,6 @@ namespace BlowFishCS
 		{
 			return Crypt_CBC(ct, true);
 		}
-
 		/// <summary>
 		/// Шифровка массива байтов в СВС
 		/// IV должен быть создан и сохранен вручную.
@@ -166,7 +140,6 @@ namespace BlowFishCS
 		{
 			return Crypt_CBC(pt, false);
 		}
-
 		/// <summary>
         /// Шифровка текста в ЕСВ
 		/// </summary>
@@ -176,7 +149,6 @@ namespace BlowFishCS
 		{
 			return ByteToHex(Encrypt_ECB(Encoding.ASCII.GetBytes(pt)));
 		}
-
 		/// <summary>
         /// Дешифрует строка ECB
 		/// </summary>
@@ -186,7 +158,6 @@ namespace BlowFishCS
 		{
 			return Encoding.ASCII.GetString(Decrypt_ECB(HexToByte(ct))).Replace("\0", "");
 		}
-
 		/// <summary>
 		// Шифрует массив байтов в ECB 
 		/// </summary>
@@ -196,7 +167,6 @@ namespace BlowFishCS
 		{
 			return Crypt_ECB(pt, false);
 		}
-
 		/// <summary>
 		/// Расшифрует массив байтов (ЕСВ)
 		/// </summary>
@@ -206,7 +176,6 @@ namespace BlowFishCS
 		{
 			return Crypt_ECB(ct, true);
 		}
-
 		/// <summary>
 		/// Шифрует строку в CTR
 		/// </summary>
@@ -218,7 +187,6 @@ namespace BlowFishCS
 				SetRandomIV();
 			return ByteToHex(InitVector) + ByteToHex(Crypt_CTR(Encoding.ASCII.GetBytes(pt), 2));
 		}
-
 		/// <summary>
 		/// Дешифрует строку в CTR
 		/// </summary>
@@ -229,7 +197,6 @@ namespace BlowFishCS
 			IV = HexToByte(ct.Substring(0, 16));
 			return Encoding.ASCII.GetString(Crypt_CTR(HexToByte(ct.Substring(16)), 2)).Replace("\0", "");
 		}
-
 		/// <summary>
 		/// Вектор инициализации для CBC
 		/// </summary>
@@ -249,13 +216,11 @@ namespace BlowFishCS
 				}
 			}
 		}
-
 		public bool NonStandard
 		{
 			get { return nonStandardMethod; }
 			set { nonStandardMethod = value; }
 		}
-
 		/// <summary>
 		/// Создает и устанавливает случмайный IV
 		/// </summary>
@@ -267,11 +232,8 @@ namespace BlowFishCS
 			IVSet = true;
 			return InitVector;
 		}
-
 		#endregion
-
 		#region Критпография
-
 		/// <summary>
 		/// Утснаовка S-блков и ключа
 		/// </summary>
@@ -284,13 +246,11 @@ namespace BlowFishCS
 			bf_s1 = SetupS1();
 			bf_s2 = SetupS2();
 			bf_s3 = SetupS3();
-
 			key = new byte[cipherKey.Length]; // до  448 бит
 			if (cipherKey.Length > 56)
 			{
 				throw new Exception("Key too long. 56 bytes required."); //до 56 битов, т.е до 28 C#-char
 			}
-
 			Buffer.BlockCopy(cipherKey, 0, key, 0, cipherKey.Length);
 			int j = 0;
 			for (int i = 0; i < 18; i++)
@@ -299,7 +259,6 @@ namespace BlowFishCS
 				bf_P[i] ^= d;
 				j = (j + 4) % cipherKey.Length;
 			}
-
 			xl_par = 0;
 			xr_par = 0;
 			for (int i = 0; i < 18; i += 2)
@@ -308,7 +267,6 @@ namespace BlowFishCS
 				bf_P[i] = xl_par;
 				bf_P[i + 1] = xr_par;
 			}
-
 			for (int i = 0; i < 256; i += 2)
 			{
 				encipher();
@@ -334,7 +292,6 @@ namespace BlowFishCS
 				bf_s3[i + 1] = xr_par;
 			}
 		}
-
 		/// <summary>
 		/// Шифрует или дешифрует данные в ECB режиме
 		/// </summary>
@@ -362,7 +319,6 @@ namespace BlowFishCS
 			}
 			return plainText;
 		}
-
 		public byte[] Crypt_CTR(byte[] text, int numThreads)
 		{
 			if (!IVSet)
@@ -388,7 +344,6 @@ namespace BlowFishCS
 			}
 			return plainText;
 		}
-
 		/// <summary>
 		/// Шифрует или дешифрует данные в режиме CBC
 		/// </summary>
@@ -424,18 +379,15 @@ namespace BlowFishCS
 				for (int i = 0; i < plainText.Length; i += 8)
 				{
 					Buffer.BlockCopy(plainText, i, block, 0, 8);
-
 					Buffer.BlockCopy(block, 0, preblock, 0, 8);
 					BlockDecrypt(ref block);
 					XorBlock(ref block, iv);
 					Buffer.BlockCopy(preblock, 0, iv, 0, 8);
-
 					Buffer.BlockCopy(block, 0, plainText, i, 8);
 				}
 			}
 			return plainText;
 		}
-
 		/// <summary>
 		///XOR шифрует два 8-битных блока
 		/// </summary>
@@ -448,7 +400,6 @@ namespace BlowFishCS
 				block[i] ^= iv[i];
 			}
 		}
-
 		/// <summary>
 		/// Шифрует 64-битный блок
 		/// </summary>
@@ -459,7 +410,6 @@ namespace BlowFishCS
 			encipher();
 			GetBlock(ref block);
 		}
-
 		/// <summary>
 		/// Дешифрует   64 битный блок
 		/// </summary>
@@ -470,7 +420,6 @@ namespace BlowFishCS
 			decipher();
 			GetBlock(ref block);
 		}
-
 		/// <summary>
 		/// разделяет блоки на два unsigned значения
 		/// </summary>
@@ -496,7 +445,6 @@ namespace BlowFishCS
 				xr_par = BitConverter.ToUInt32(block2, 0);
 			}
 		}
-
 		/// <summary>
 		/// Конвертирует два unsigned в 64-битный блок
 		/// </summary>
@@ -514,7 +462,6 @@ namespace BlowFishCS
 			{
 				block1 = BitConverter.GetBytes(xl_par);
 				block2 = BitConverter.GetBytes(xr_par);
-
 				//GetBytes возвращает байты в обратном порядке
 				Array.Reverse(block1);
 				Array.Reverse(block2);
@@ -523,7 +470,6 @@ namespace BlowFishCS
 			Buffer.BlockCopy(block1, 0, block, 0, 4);
 			Buffer.BlockCopy(block2, 0, block, 4, 4);
 		}
-
 		/// <summary>
 		/// Запускает  BLOWFISH алгоритм (стандартные 16 раундов)
 		/// </summary>
@@ -536,13 +482,11 @@ namespace BlowFishCS
 				xl_par = round(xl_par, xr_par, i + 2);
 			}
 			xr_par = xr_par ^ bf_P[17];
-
 			//swap the blocks
 			uint swap = xl_par;
 			xl_par = xr_par;
 			xr_par = swap;
 		}
-
 		/// <summary>
 		/// Запускает  BLOWFISH в  реверсивном порядке (стандартные 16 раундов)
 		/// </summary>
@@ -555,13 +499,11 @@ namespace BlowFishCS
 				xl_par = round(xl_par, xr_par, i - 1);
 			}
 			xr_par = xr_par ^ bf_P[0];
-
 			//swap the blocks
 			uint swap = xl_par;
 			xl_par = xr_par;
 			xr_par = swap;
 		}
-
 		/// <summary>
 		/// один раунд  blowfish 
 		/// </summary>
@@ -576,9 +518,7 @@ namespace BlowFishCS
 			uint x3 = x2 ^ bf_P[n];
 			return x3 ^ a;
 		}
-
 		#endregion
-
 		#region S-блоки
 		//S-блоки являются  HEX - цифрами  Пи. 
 		//Кол-во  hex цифир может быть увеличено,  если хочется поигарться с большим кол-вом раундов и более длинным ключом
@@ -591,7 +531,6 @@ namespace BlowFishCS
 					0xc0ac29b7,0xc97c50dd,0x3f84d5b5,0xb5470917,0x9216d5d9,0x8979fb1b
 			};
 		}
-
 		private uint[] SetupS0()
 		{
 			return new uint[] {
@@ -640,7 +579,6 @@ namespace BlowFishCS
 					0x53b02d5d,0xa99f8fa1,0x08ba4799,0x6e85076a
 			};
 		}
-
 		private uint[] SetupS1()
 		{
 			return new uint[] {
@@ -689,7 +627,6 @@ namespace BlowFishCS
 					0x153e21e7,0x8fb03d4a,0xe6e39f2b,0xdb83adf7
 			};
 		}
-
 		private uint[] SetupS2()
 		{
 			return new uint[] {
@@ -738,7 +675,6 @@ namespace BlowFishCS
 					0xd79a3234,0x92638212,0x670efa8e,0x406000e0
 			};
 		}
-
 		private uint[] SetupS3()
 		{
 			return new uint[] {
@@ -787,35 +723,28 @@ namespace BlowFishCS
 					0xb74e6132,0xce77e25b,0x578fdfe3,0x3ac372e6
 			};
 		}
-
 		#endregion
-
 		#region Преобразования
-
 		//Получает первый байт в unsigned
 		private byte wordByte0(uint w)
 		{
 			return (byte)(w / 256 / 256 / 256 % 256);
 		}
-
 		//Получает второй  байт в unsigned
 		private byte wordByte1(uint w)
 		{
 			return (byte)(w / 256 / 256 % 256);
 		}
-
 		//Получает третий  байт в unsigned
 		private byte wordByte2(uint w)
 		{
 			return (byte)(w / 256 % 256);
 		}
-
 		//Получает четвертый  байт в unsigned
 		private byte wordByte3(uint w)
 		{
 			return (byte)(w % 256);
 		}
-
 		//Конвертирует массив байтов в hex-строку
 		private string ByteToHex(byte[] bytes)
 		{
@@ -824,7 +753,6 @@ namespace BlowFishCS
 				s.Append(b.ToString("x2"));
 			return s.ToString();
 		}
-
 		//Конвертирует hex-строку в массив байтов 
 		private byte[] HexToByte(string hex)
 		{
@@ -837,7 +765,6 @@ namespace BlowFishCS
 			}
 			return r;
 		}
-
 		//Конвертирует одиночный hex-символ в его десятичное значение
 		private byte GetHex(char x)
 		{
@@ -855,7 +782,6 @@ namespace BlowFishCS
 			}
 			return 0;
 		}
-
 		#endregion
 	}
 }
