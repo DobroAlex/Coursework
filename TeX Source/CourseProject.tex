@@ -51,7 +51,7 @@
 \renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.}% Меняем везде перечисления на цифра.цифра
 \renewcommand{\theenumiii}{.\arabic{enumiii}}% Меняем везде перечисления на цифра.цифра
 \renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.}% Меняем везде перечисления на цифра.цифра
-
+\addto\captionsrussian{\def\refname{Список используемой литературы}}
 \renewcommand{\rmdefault}{ftm}
 %NB: три команды ниже переопределяют некотрые шрифты  и дают поддержку жирного и прочиах текстов https://www.linux.org.ru/forum/general/4219163
 \renewcommand{\rmdefault}{cmr} % Шрифт с засечками
@@ -60,6 +60,7 @@
 \renewcommand*\thesection{\arabic{section}}
     
 \begin{document}
+	\renewcommand{\bibname}{Список использованной литературы}
 	%\pagestyle{empty} % нумерация выкл.
 	\input{Course-Title}% это титульный лист
 
