@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.16)  26 APR 2020 16:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.16)  3 MAY 2020 13:50
 entering extended mode
 **./CourseProject.tex
 (CourseProject.tex
@@ -850,18 +850,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
  (0-Intoduction.tex [1
 
 ]
-<Images/AntiMail.png, id=20, 450.9648pt x 424.9476pt>
-File: Images/AntiMail.png Graphic file (type png)
-<use Images/AntiMail.png>
-Package pdftex.def Info: Images/AntiMail.png  used on input line 15.
-(pdftex.def)             Requested size: 360.77231pt x 339.95853pt.
- [3 <./Images/AntiMail.png>]
-Overfull \hbox (5.08612pt too wide) in paragraph at lines 25--28
-\T2A/cmr/m/n/14.4 ний поль-зо-ва-те-лей циф-ро-вых си-стем, ис-поль-зу-е-мые ки
-бер-преступниками
+Overfull \hbox (2.79915pt too wide) in paragraph at lines 11--12
+\T2A/cmr/m/n/14.4 про-ти-во-ра-кет-ной обо-ро-ны (да-лее ѕ–ќ) пред-став-л€-ют с
+о-бой комплeксную
  []
 
-[4] [5]) (1-SecrecyOfCorrespondence.tex [6] [7]
+
+Overfull \hbox (3.17995pt too wide) in paragraph at lines 11--12
+\T2A/cmr/m/n/14.4 си-стем ре-аль-но-го вре-ме-ни, ра-бо-та-ю-щих па-рал-лель-но
+. Ќеоб-хо-ди-мость точ-
+ []
+
+[3]
+Overfull \hbox (0.91455pt too wide) in paragraph at lines 27--28
+[]\T2A/cmr/m/n/14.4 ќписать си-сте-му про-ти-во-ра-кет-ной обо-ро-ны дл€ ко-то-
+рой бу-дет стро-
+ []
+
+
+Overfull \hbox (3.39603pt too wide) in paragraph at lines 32--33
+[]\T2A/cmr/m/n/14.4 провести те-сти-ро-ва-ние по-лу-чен-но-го ал-го-рит-ма в им
+и-та-ци-он-ном ѕќ; 
+ []
+
+[4]
+Overfull \hbox (54.95804pt too wide) in paragraph at lines 42--43
+\T2A/cmr/m/n/14.4 спо-со-бен ими-ти-ро-вать пе-ре-хват це-лей с за-дан-ны-ми пр
+остранственно-скоростными
+ []
+
+[5]) (1-SecrecyOfCorrespondence.tex [6] [7]
 Overfull \hbox (2.4474pt too wide) in paragraph at lines 36--37
 \T2A/cmr/m/n/14.4 про-слу-ши-ва-ние те-ле-фон-ных пе-ре-го-во-ров, сн€-тие ин-ф
 ор-ма-ции с тех-
@@ -886,7 +904,7 @@ Overfull \hbox (24.39294pt too wide) in paragraph at lines 28--30
  []
 
 [11]
-<Images/KeyLog.jpg, id=55, 74.4381pt x 63.3567pt>
+<Images/KeyLog.jpg, id=52, 74.4381pt x 63.3567pt>
 File: Images/KeyLog.jpg Graphic file (type jpg)
 <use Images/KeyLog.jpg>
 Package pdftex.def Info: Images/KeyLog.jpg  used on input line 43.
@@ -927,7 +945,7 @@ Overfull \hbox (4.51729pt too wide) in paragraph at lines 89--90
  []
 
 [16]
-<Images/ChinaControl.jpg, id=77, 534.49687pt x 680.5425pt>
+<Images/ChinaControl.jpg, id=74, 534.49687pt x 680.5425pt>
 File: Images/ChinaControl.jpg Graphic file (type jpg)
 <use Images/ChinaControl.jpg>
 Package pdftex.def Info: Images/ChinaControl.jpg  used on input line 105.
@@ -949,7 +967,7 @@ Overfull \hbox (1.95898pt too wide) in paragraph at lines 117--121
  []
 
 [18 <./Images/ChinaControl.jpg>]
-<Images/Boundless.jpg, id=84, 702.625pt x 526.96875pt>
+<Images/Boundless.jpg, id=81, 702.625pt x 526.96875pt>
 File: Images/Boundless.jpg Graphic file (type jpg)
 <use Images/Boundless.jpg>
 Package pdftex.def Info: Images/Boundless.jpg  used on input line 125.
@@ -966,7 +984,7 @@ Overfull \hbox (9.938pt too wide) in paragraph at lines 134--136
 -о-на-жа, раз-ра-ба-ты-ва-е-ма€ ком-
  []
 
-<Images/Muscular.jpg, id=89, 540.0175pt x 405.515pt>
+<Images/Muscular.jpg, id=86, 540.0175pt x 405.515pt>
 File: Images/Muscular.jpg Graphic file (type jpg)
 <use Images/Muscular.jpg>
 Package pdftex.def Info: Images/Muscular.jpg  used on input line 145.
@@ -1029,7 +1047,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
 pdfTeX warning: pdflatex.exe (file ./Images/HowToTor.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<Images/HowToTor.pdf, id=109, 383.93437pt x 245.41687pt>
+<Images/HowToTor.pdf, id=106, 383.93437pt x 245.41687pt>
 File: Images/HowToTor.pdf Graphic file (type pdf)
 <use Images/HowToTor.pdf>
 Package pdftex.def Info: Images/HowToTor.pdf  used on input line 33.
@@ -1052,24 +1070,24 @@ Overfull \hbox (15.97072pt too wide) in paragraph at lines 72--73
 ер-ные про-
  []
 
-<Images/steganography.png, id=129, 301.125pt x 150.5625pt>
+<Images/steganography.png, id=126, 301.125pt x 150.5625pt>
 File: Images/steganography.png Graphic file (type png)
 <use Images/steganography.png>
 Package pdftex.def Info: Images/steganography.png  used on input line 80.
 (pdftex.def)             Requested size: 240.90031pt x 120.45015pt.
-<Images/PopularMessage.png, id=130, 602.25pt x 372.39125pt>
+<Images/PopularMessage.png, id=127, 602.25pt x 372.39125pt>
 File: Images/PopularMessage.png Graphic file (type png)
 <use Images/PopularMessage.png>
 Package pdftex.def Info: Images/PopularMessage.png  used on input line 90.
 (pdftex.def)             Requested size: 240.89572pt x 148.95386pt.
 [31 <./Images/steganography.png (PNG copy)>] [32 <./Images/PopularMessage.png>]
-<Images/TelegramPopular.png, id=139, 573.14125pt x 341.275pt>
+<Images/TelegramPopular.png, id=137, 573.14125pt x 341.275pt>
 File: Images/TelegramPopular.png Graphic file (type png)
 <use Images/TelegramPopular.png>
 Package pdftex.def Info: Images/TelegramPopular.png  used on input line 116.
 (pdftex.def)             Requested size: 229.25243pt x 136.50757pt.
 [33]
-<Images/MTProto.png, id=143, 782.925pt x 750.805pt>
+<Images/MTProto.png, id=141, 782.925pt x 750.805pt>
 File: Images/MTProto.png Graphic file (type png)
 <use Images/MTProto.png>
 Package pdftex.def Info: Images/MTProto.png  used on input line 123.
@@ -1213,17 +1231,17 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 78.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
  ) 
 Here is how much of TeX's memory you used:
- 5803 strings out of 492946
- 79961 string characters out of 3135530
+ 5798 strings out of 492946
+ 79854 string characters out of 3135530
  157359 words of memory out of 3000000
- 9430 multiletter control sequences out of 15000+200000
+ 9426 multiletter control sequences out of 15000+200000
  34431 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,43p,2784b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,7n,43p,2784b,238s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\User\AppD
 ata\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1440.pk> <C:\Users\Us
-er\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk> <C:
-\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.
+er\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\U
+sers\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.
 pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
 bx2074.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dp
 i600\labx3583.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh
@@ -1236,9 +1254,9 @@ eX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi650\larm1200.pk><C:/Program Files/MiKTeX 2.
 type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
 tmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on CourseProject.pdf (47 pages, 951639 bytes).
+Output written on CourseProject.pdf (47 pages, 919939 bytes).
 PDF statistics:
- 671 PDF objects out of 1000 (max. 8388607)
+ 669 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 75 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 70 words of extra memory for PDF output out of 10000 (max. 10000000)
 
