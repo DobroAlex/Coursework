@@ -30,6 +30,7 @@
 \usepackage{t1enc}%
 \usepackage{cite}
 \usepackage{graphicx}
+\usepackage{longtable}
 \graphicspath{{Images/}} %http://dkhramov.dp.ua/Comp.TexIncludeGraphics#.WwLdJa3sTMU
 \DeclareGraphicsExtensions{.pdf,.png,.jpg} %http://dkhramov.dp.ua/Comp.TexIncludeGraphics#.WwLdJa3sTMU
  %https://tex.stackexchange.com/questions/17734/cannot-determine-size-of-graphic
@@ -60,6 +61,9 @@
 \renewcommand*\thesection{\arabic{section}}
     
 \begin{document}
+	\numberwithin{equation}{subsection} %Стилистика нумерования уравненений в \begin{equation} \label{name:\d}. Тут -- номер главы.сабсекция.номер_уравнения_с_лэйблом_name
+	% https://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics#Equation_numbering
+	%http://fkn.ktu10.com/?q=node/6860
 	\renewcommand{\bibname}{Список использованной литературы}
 	%\pagestyle{empty} % нумерация выкл.
 	\input{Course-Title}% это титульный лист
@@ -68,11 +72,11 @@
 	\thispagestyle{empty}%отключает нумерование страниц до введения включительно 
 	%\addcontentsline{toc}{section}{Введение}% будет костыльно выглядеть
 	\input{0-Intoduction} %введение
-	\input{1-SecrecyOfCorrespondence}
-	\input{2-DigitalThreat}
-	\input{3-DataProtection}
-	\input{Concluding}
-	\input{UsedLiterature} %список литературы
+	\input{1-Chap}
+	\input{2-Chap}
+	%\input{3-DataProtection}
+	%\input{Concluding}
+	%\input{UsedLiterature} %список литературы
 	\newpage
 	
 \end{document}
