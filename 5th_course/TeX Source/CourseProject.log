@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.16)  2 JUN 2020 23:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.16)  3 JUN 2020 23:29
 entering extended mode
 **./CourseProject.tex
 (CourseProject.tex
@@ -678,6 +678,9 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
 \c@LT@chunks=\count111
 \LT@p@ftn=\toks30
 )
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
@@ -708,26 +711,26 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (CourseProject.aux)
 \openout1 = `CourseProject.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 64.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    ... okay on input line 64.
 
 (C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex/context/base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1027,24 +1030,95 @@ Package pdftex.def Info: Images/MainAlgorithm.png  used on input line 98.
 (pdftex.def)             Requested size: 349.70235pt x 600.88782pt.
  [20 <./Images/NegativeSelectionProcess.png>] [21 <./Images/MainAlgorithm.png>]
 
-Overfull \hbox (61.61415pt too wide) in paragraph at lines 108--109
-[]\T2A/cmr/m/n/14.4 Для аген-тов был вве-ден аб-стракт-ный ба-зо-вый класс <<Ab
-stractBaseClassAgent>>
+Overfull \hbox (1.79028pt too wide) in paragraph at lines 108--109
+\T2A/cmr/m/n/14.4 Class Agent>> и все ис-поль-зу-е-мые аген-ты яв-ля-ют-ся эк-з
+ем-пля-ра-ми классов-
+ []
+
+[22]
+Overfull \hbox (37.65244pt too wide) in paragraph at lines 117--118
+\T2A/cmr/m/n/14.4 ри-сти-ка-ми, пре-вос-хо-дя-щи-ми ха-рак-те-ри-сти-ки уже от-
+прав-лен-ной/отправленных
  []
 
 
-Overfull \hbox (2.79083pt too wide) in paragraph at lines 108--109
-\T2A/cmr/m/n/14.4 и все ис-поль-зу-е-мые аген-ты яв-ля-ют-ся эк-зем-пля-ра-ми к
-лассов-наследников.
+Overfull \hbox (1.45015pt too wide) in paragraph at lines 117--118
+\T2A/cmr/m/n/14.4 перехватов про-ис-хо-дит толь-ко по-сле на-ступ-ле-ния со-бы-
+тия <<но-вая ракета-
  []
 
 
-Overfull \hbox (3.3818pt too wide) in paragraph at lines 108--109
-\T2A/cmr/m/n/14.4 Ком-по-нен-ты СПРО ком-му-ни-ци-ру-ют меж-ду со-бой с по-мо-щ
-ью веб-сокетов.
+Overfull \hbox (46.76375pt too wide) in paragraph at lines 117--118
+\T2A/cmr/m/n/14.4 цель об-на-ру-же-на ра-да-ром>> или <<на склад по-сту-пи-ла н
+о-вая ракета-перехватчик>>.
  []
 
-[22]) [23]
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 122--127
+
+ []
+
+<Images/T_aff_ConvergRate.png, id=113, 743.77875pt x 378.41376pt>
+File: Images/T_aff_ConvergRate.png Graphic file (type png)
+<use Images/T_aff_ConvergRate.png>
+Package pdftex.def Info: Images/T_aff_ConvergRate.png  used on input line 132.
+(pdftex.def)             Requested size: 483.45045pt x 245.96602pt.
+
+Overfull \hbox (28.20634pt too wide) in paragraph at lines 132--133
+ [][] 
+ []
+
+<Images/R_u_ConvergRate.png, id=114, 706.64pt x 255.95625pt>
+File: Images/R_u_ConvergRate.png Graphic file (type png)
+<use Images/R_u_ConvergRate.png>
+Package pdftex.def Info: Images/R_u_ConvergRate.png  used on input line 137.
+(pdftex.def)             Requested size: 459.31056pt x 166.36958pt.
+
+Overfull \hbox (4.06645pt too wide) in paragraph at lines 137--138
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24 <./Images/T_aff_ConvergRate.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 148.
+
+
+Overfull \hbox (33.2907pt too wide) in paragraph at lines 149--158
+[][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 168.
+
+<Images/CapturePlanExample.png, id=118, 891.33pt x 91.542pt>
+File: Images/CapturePlanExample.png Graphic file (type png)
+<use Images/CapturePlanExample.png>
+Package pdftex.def Info: Images/CapturePlanExample.png  used on input line 169.
+
+(pdftex.def)             Requested size: 445.66391pt x 45.77089pt.
+[25 <./Images/R_u_ConvergRate.png>]) (Concluding.tex [26 <./Images/CapturePlanE
+xample.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+
+Overfull \hbox (1.5041pt too wide) in paragraph at lines 11--12
+[]\T2A/cmr/m/n/14.4 Полная си-му-ля-ция од-но-вре-мен-но про-ис-хо-дя-щих па-ра
+л-лель-ных про-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+[27]) [28]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 82.
  (CourseProject.aux)
@@ -1053,13 +1127,13 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 82.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  ) 
 Here is how much of TeX's memory you used:
- 5832 strings out of 492946
- 80196 string characters out of 3135530
- 162546 words of memory out of 3000000
- 9462 multiletter control sequences out of 15000+200000
+ 5866 strings out of 492946
+ 81061 string characters out of 3135530
+ 163041 words of memory out of 3000000
+ 9487 multiletter control sequences out of 15000+200000
  36977 words of font info for 83 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,43p,2519b,234s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,9n,43p,2680b,234s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\User\AppD
 ata\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\Us
 er\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk> <C:
@@ -1079,9 +1153,9 @@ bm10.pfb><C:/Users/User/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/symbol/usyr.
 pfb><C:/Users/User/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/symbol/usyr.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on CourseProject.pdf (23 pages, 552917 bytes).
+Output written on CourseProject.pdf (28 pages, 611503 bytes).
 PDF statistics:
- 468 PDF objects out of 1000 (max. 8388607)
+ 503 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 60 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 75 words of extra memory for PDF output out of 10000 (max. 10000000)
 
